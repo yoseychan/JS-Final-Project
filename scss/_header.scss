@@ -1,0 +1,31 @@
+
+
+div.header {
+    height: 100px;
+    width: 100vw;
+    background-color: #343930;
+    div.container{
+        height:100px;
+        div.nav{
+            margin: 0 auto;
+            width:700px;
+            height: 100%;
+            nav{
+                ul{ 
+                    li{
+                        display: inline;
+                        a{
+                            display: inline-block;
+                            color: #e8cba6;
+                            font-size: 24px;                             
+                        }
+                        a.micasa {
+                            font-size: 60px;
+                            font-family: 'Leckerli One', cursive;
+                        }
+                    }
+                }
+            }
+        }    
+    }
+}
