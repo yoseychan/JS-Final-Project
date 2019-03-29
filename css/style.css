@@ -44,33 +44,175 @@ table {
 }
 
 div.header {
-  height: 100px;
+  height: 80px;
   width: 100vw;
   background-color: #343930;
 }
 div.header div.container {
   height: 100px;
 }
-div.header div.container div.nav {
-  margin: 0 auto;
-  width: 700px;
+div.header div.container div.row {
   height: 100%;
 }
-div.header div.container div.nav nav ul li {
-  display: inline;
+div.header div.container div.row div.hnav nav {
+  text-align: center;
 }
-div.header div.container div.nav nav ul li a {
+div.header div.container div.row div.hnav nav ul {
+  list-style-type: none;
+  display: inline-block;
+  margin: 0;
+  font-size: 0;
+}
+div.header div.container div.row div.hnav nav ul li {
+  display: inline-block;
+}
+div.header div.container div.row div.hnav nav ul li a {
+  text-decoration: none;
   display: inline-block;
   color: #e8cba6;
-  font-size: 24px;
+  font-size: 22px;
+  padding: 21px;
+  transition: 0.6s;
+  font-family: "Roboto Slab", serif;
 }
-div.header div.container div.nav nav ul li a.micasa {
-  font-size: 60px;
+div.header div.container div.row div.hnav nav ul li a.micasa {
+  font-size: 46px;
   font-family: "Leckerli One", cursive;
+  padding: 17px;
+}
+div.header div.container div.row div.hnav nav ul li a:hover {
+  color: #343930;
+  background-color: #e8cba6;
 }
 
-div.hero div {
+div.footer {
+  width: 100vw;
+  background-color: #343930;
+}
+div.footer div.container div.fupper {
+  height: 150px;
+}
+div.footer div.container div.fupper div.ficons nav {
+  margin-top: 20px;
+}
+div.footer div.container div.fupper div.ficons nav ul li {
+  display: inline-block;
+}
+div.footer div.container div.fupper div.ficons nav ul li a {
+  margin-right: 10px;
+  color: #e8cba6;
+  font-size: 32px;
+  transition: 0.6s;
+}
+div.footer div.container div.fupper div.ficons nav ul li a:hover {
+  color: #e99573;
+}
+div.footer div.container div.fupper div.fnav nav ul li {
   text-align: center;
+  margin: 10px 0;
+}
+div.footer div.container div.fupper div.fnav nav ul li a {
+  text-decoration: none;
+  color: #e8cba6;
+  font-size: 14px;
+  font-family: "Roboto Slab", serif;
+  padding: 2px 15px;
+  transition: 0.6s;
+}
+div.footer div.container div.fupper div.fnav nav ul li a:hover {
+  border-bottom: 1px solid #e99573;
+  color: #e99573;
+}
+div.footer div.container div.flower {
+  height: 60px;
+}
+div.footer div.container div.flower p {
+  text-align: center;
+  color: #e8cba6;
+  font-family: "Roboto Slab", serif;
+  font-size: 12px;
+  margin-top: 20px;
+}
+div.footer div.container div.flower p span {
+  font-family: "Leckerli One", cursive;
+  font-size: 13px;
+}
+
+div.hero {
+  width: 100vw;
+  height: 880px;
+  background-image: url("../img/heroRet.jpg");
+  background-size: cover;
+  background-position: center;
+}
+div.hero div.row {
+  height: 100%;
+}
+div.hero div.row div.col {
+  text-align: center;
+  margin: 550px 0;
+}
+div.hero div.row div.col a {
+  background-color: rgba(52, 57, 48, 0.8);
+  color: #e8cba6;
+  font-family: "Roboto Slab", serif;
+  font-size: 36px;
+  text-decoration: none;
+  padding: 5px 50px;
+  transition: 0.6s;
+}
+div.hero div.row div.col a:hover {
+  background-color: rgba(232, 203, 166, 0.8);
+  color: #343930;
+}
+
+div.ghouse {
+  width: 100vw;
+  height: 450px;
+  background-color: #e8cba6;
+}
+div.ghouse div.container {
+  height: 450px;
+}
+div.ghouse div.container div.row div.col {
+  margin-top: 50px;
+  height: 350px;
+  background-color: #ddd2c3;
+}
+div.ghouse div.container div.row div.col h2 {
+  margin: 50px 0;
+  color: #343930;
+  font-size: 36px;
+  font-family: "Roboto Slab", serif;
+  text-align: center;
+}
+div.ghouse div.container div.row div.col div.text {
+  max-width: 45vw;
+  height: 30%;
+  margin: 0 auto;
+}
+div.ghouse div.container div.row div.col div.text p {
+  font-family: "Roboto Slab", serif;
+  font-size: 18px;
+  color: #343930;
+  text-align: center;
+}
+div.ghouse div.container div.row div.col div.button {
+  margin-top: 30px;
+  text-align: center;
+}
+div.ghouse div.container div.row div.col div.button a {
+  text-decoration: none;
+  font-family: "Roboto Slab", serif;
+  font-size: 20px;
+  color: #e8cba6;
+  background-color: #343930;
+  padding: 5px 30px;
+  transition: 0.6s;
+}
+div.ghouse div.container div.row div.col div.button a:hover {
+  background-color: #e99573;
+  color: #343930;
 }
 
 /*# sourceMappingURL=style.css.map */

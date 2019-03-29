@@ -1,18 +1,90 @@
 @import 'reset';
 @import 'variables';
 @import 'header';
+@import 'footer';
 
 
-// HOMEPAGE
+// HOMEPAGE HERO
 
 div.hero {
-    
-    div {
-        text-align: center;
-        a{  
-          
-            
+    width:100vw;
+    height:880px;
+    background-image: url('../img/heroRet.jpg');
+    background-size: cover;
+    background-position: center;
+    div.row {
+        height:100%;
+        div.col {
+            text-align: center;
+            margin: 550px 0;
+            a {
+                background-color: $theme-g-trans;
+                color: $theme-c;
+                font-family: $font-Robo;
+                font-size: 36px;
+                text-decoration: none;
+                padding: 5px 50px;
+                transition: .6s;    
+            }
+            a:hover {
+                background-color: $theme-c-trans;
+                color: $theme-g;
+            }
         }
-    }
-    
+    }   
 }
+
+// BANNERS (HOMEPAGE and RESERVATIONS)
+
+div.ghouse {
+    width: 100vw;
+    height: 450px;
+    background-color: $theme-c;
+    div.container {
+        height:450px;
+        div.row {
+            div.col {
+                margin-top: 50px;
+                height:350px;
+                background-color: $theme-lightc;
+                h2 {
+                    margin: 50px 0;
+                    color: $theme-g;
+                    font-size: 36px;
+                    font-family: $font-Robo;
+                    text-align: center;
+                }
+                div.text {
+                    max-width: 45vw;
+                    height: 30%;
+                    margin: 0 auto;
+                    p{
+                        font-family: $font-Robo;
+                        font-size: 18px;
+                        color: $theme-g;
+                        text-align: center;
+                    }
+                }
+                div.button {
+                    margin-top: 30px;
+                    text-align: center;
+                    a{
+                        text-decoration: none;
+                        font-family: $font-Robo;
+                        font-size: 20px;
+                        color: $theme-c;
+                        background-color: $theme-g;
+                        padding: 5px 30px;
+                        transition: .6s;   
+                    }
+                    a:hover {
+                        background-color: $theme-or;
+                        color: $theme-g;
+                        
+                    }
+                }
+            }
+        } 
+    }
+}
+
