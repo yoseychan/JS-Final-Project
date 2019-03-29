@@ -34,53 +34,58 @@ div.hero {
     }   
 }
 
-// BANNERS (HOMEPAGE and RESERVATIONS)
+// BANNERS (HOMEPAGE/RESERVATIONS)
 
 div.ghouse {
     width: 100vw;
     height: 450px;
-    background-color: $theme-c;
+    font-family: $font-Robo;
+    color: $theme-g;
     div.container {
         height:450px;
         div.row {
             div.col {
                 margin-top: 50px;
                 height:350px;
-                background-color: $theme-lightc;
+                text-align: center;
                 h2 {
                     margin: 50px 0;
-                    color: $theme-g;
                     font-size: 36px;
-                    font-family: $font-Robo;
-                    text-align: center;
+                }
+                h3{
+                    margin-top: 20px;
+                    font-size: 20px;
                 }
                 div.text {
                     max-width: 45vw;
                     height: 30%;
                     margin: 0 auto;
                     p{
-                        font-family: $font-Robo;
                         font-size: 18px;
-                        color: $theme-g;
-                        text-align: center;
                     }
                 }
                 div.button {
                     margin-top: 30px;
-                    text-align: center;
                     a{
                         text-decoration: none;
-                        font-family: $font-Robo;
                         font-size: 20px;
                         color: $theme-c;
                         background-color: $theme-g;
                         padding: 5px 30px;
-                        transition: .6s;   
-                    }
+                        transition: .6s; 
+                    }    
+                    a.land{
+                            background-color: $theme-or;
+                            color: $theme-g;
+                            transition: .6s;
+                    }    
+                    
                     a:hover {
                         background-color: $theme-or;
-                        color: $theme-g;
-                        
+                        color: $theme-g;    
+                    }
+                    a.land:hover {
+                        border: 1px solid $theme-g;
                     }
                 }
             }
@@ -88,3 +93,109 @@ div.ghouse {
     }
 }
 
+.lighter{
+    background-color: $theme-lightc;
+}
+.darker{
+    background-color: $theme-c;
+}
+
+// GUEST HOUSE and Rooms
+
+// PREVIEW AND PRICE
+div.mainline1 {
+    width: 100vw;
+    font-family: $font-Robo;
+    color: $theme-g;
+    div.prev {
+        height:400px;   
+    }
+    div.text {
+        text-align: center;
+        div.col {
+            h2 {
+                font-size: 32px;
+                margin:20px 0 50px 0;
+            }
+            div.des {
+                width:60%;
+                margin: 0 auto;
+                p{
+                    font-size: 18px;
+                }
+            }
+            div.starred {
+                p {
+                    font-size: 12px;
+                    margin-bottom: 10px;
+                }
+            }
+        }
+    }  
+}
+
+// RULES
+
+div.mainline2 {
+
+    div.container{
+        div.row {
+            div.sq {
+                p{  
+                    display: inline-block;
+                    font-family: $font-Robo;
+                    text-align: center;
+                    margin: 10px 10px 25px 10px;
+                
+                }
+            }
+        }
+    }
+}
+.imgplace{
+    height:200px;
+}
+
+//RESERVATION BUTTON
+
+div.mainline3 {
+    width: 100vw;
+    height: 100px;
+    div.container {
+        height: 100px;
+        div.row {
+            font-size: 24px;
+            font-family: $font-Robo;
+            div.res {                
+                div.button{
+                    margin-top: 35px;
+                    text-align: center;
+                    a {
+                        color: $theme-c;
+                        background-color: $theme-g;
+                        padding: 5px 40px;
+                        transition:.6s;                         
+                    }
+                    a:hover {
+                        text-decoration: none;
+                        background-color: $theme-or;
+                        color:$theme-g;
+                    }
+                }
+            }
+            div.back{
+                margin-top: 35px;
+                a{
+                    color: $theme-g;
+                    padding: 5px;
+                    transition:.6s;               
+                }
+                a:hover {
+                    text-decoration: none;
+                    background-color: $theme-or;
+                    color:$theme-g;
+                }
+            }
+        }
+    }
+}

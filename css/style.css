@@ -169,7 +169,8 @@ div.hero div.row div.col a:hover {
 div.ghouse {
   width: 100vw;
   height: 450px;
-  background-color: #e8cba6;
+  font-family: "Roboto Slab", serif;
+  color: #343930;
 }
 div.ghouse div.container {
   height: 450px;
@@ -177,14 +178,15 @@ div.ghouse div.container {
 div.ghouse div.container div.row div.col {
   margin-top: 50px;
   height: 350px;
-  background-color: #ddd2c3;
+  text-align: center;
 }
 div.ghouse div.container div.row div.col h2 {
   margin: 50px 0;
-  color: #343930;
   font-size: 36px;
-  font-family: "Roboto Slab", serif;
-  text-align: center;
+}
+div.ghouse div.container div.row div.col h3 {
+  margin-top: 20px;
+  font-size: 20px;
 }
 div.ghouse div.container div.row div.col div.text {
   max-width: 45vw;
@@ -192,25 +194,114 @@ div.ghouse div.container div.row div.col div.text {
   margin: 0 auto;
 }
 div.ghouse div.container div.row div.col div.text p {
-  font-family: "Roboto Slab", serif;
   font-size: 18px;
-  color: #343930;
-  text-align: center;
 }
 div.ghouse div.container div.row div.col div.button {
   margin-top: 30px;
-  text-align: center;
 }
 div.ghouse div.container div.row div.col div.button a {
   text-decoration: none;
-  font-family: "Roboto Slab", serif;
   font-size: 20px;
   color: #e8cba6;
   background-color: #343930;
   padding: 5px 30px;
   transition: 0.6s;
 }
+div.ghouse div.container div.row div.col div.button a.land {
+  background-color: #e99573;
+  color: #343930;
+  transition: 0.6s;
+}
 div.ghouse div.container div.row div.col div.button a:hover {
+  background-color: #e99573;
+  color: #343930;
+}
+div.ghouse div.container div.row div.col div.button a.land:hover {
+  border: 1px solid #343930;
+}
+
+.lighter {
+  background-color: #ddd2c3;
+}
+
+.darker {
+  background-color: #e8cba6;
+}
+
+div.mainline1 {
+  width: 100vw;
+  font-family: "Roboto Slab", serif;
+  color: #343930;
+}
+div.mainline1 div.prev {
+  height: 400px;
+}
+div.mainline1 div.text {
+  text-align: center;
+}
+div.mainline1 div.text div.col h2 {
+  font-size: 32px;
+  margin: 20px 0 50px 0;
+}
+div.mainline1 div.text div.col div.des {
+  width: 60%;
+  margin: 0 auto;
+}
+div.mainline1 div.text div.col div.des p {
+  font-size: 18px;
+}
+div.mainline1 div.text div.col div.starred p {
+  font-size: 12px;
+  margin-bottom: 10px;
+}
+
+div.mainline2 div.container div.row div.sq p {
+  display: inline-block;
+  font-family: "Roboto Slab", serif;
+  text-align: center;
+  margin: 10px 10px 25px 10px;
+}
+
+.imgplace {
+  height: 200px;
+}
+
+div.mainline3 {
+  width: 100vw;
+  height: 100px;
+}
+div.mainline3 div.container {
+  height: 100px;
+}
+div.mainline3 div.container div.row {
+  font-size: 24px;
+  font-family: "Roboto Slab", serif;
+}
+div.mainline3 div.container div.row div.res div.button {
+  margin-top: 35px;
+  text-align: center;
+}
+div.mainline3 div.container div.row div.res div.button a {
+  color: #e8cba6;
+  background-color: #343930;
+  padding: 5px 40px;
+  transition: 0.6s;
+}
+div.mainline3 div.container div.row div.res div.button a:hover {
+  text-decoration: none;
+  background-color: #e99573;
+  color: #343930;
+}
+div.mainline3 div.container div.row div.back {
+  margin-top: 35px;
+}
+div.mainline3 div.container div.row div.back a {
+  color: #343930;
+  padding: 5px;
+  transition: 0.6s;
+}
+div.mainline3 div.container div.row div.back a:hover {
+  text-decoration: none;
   background-color: #e99573;
   color: #343930;
 }
