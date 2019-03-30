@@ -272,7 +272,6 @@ div.about{
         div.row{
             div.col-12{
                 color: $theme-g;
-                
                 div.text {
                     width: 60%;
                     height: 30%;
@@ -292,6 +291,88 @@ div.about{
         }
     }
 }
+
+//LANDMARK PAGE
+
+
+.lnimg1::before{
+    background-image: url('../img/city.jpg');
+}
+.lnimg2::before{
+    background-image: url('../img/manor.jpg');
+}
+.lnimg3::before{
+    background-image: url('../img/palace.jpg');
+}
+.lnimg4::before{
+    background-image: url('../img/path.jpg');
+}
+.lnimg5::before{
+    background-image: url('../img/sea.jpg');
+}
+.lnimg6::before{
+    background-image: url('../img/swamp.jpg');
+}
+
+div.land {
+    div.container {
+        div.row {
+            div.col-12 {
+                h1 {
+                    font-size: 32px;
+                    margin: 50px 0;
+                    text-align: center;
+                    color: $theme-g;
+                }
+                a{  
+                    text-decoration: none;
+                    div.lnimg {
+                        border: 1px solid $theme-lightc;
+                        height:300px;
+                        margin-bottom: 15px;
+                        text-align: center;
+                        position: relative;
+                        display:flex;
+                        justify-content: center;
+                        align-items: center;
+                        transition: .6s;
+                        h2 {
+                            margin-top: 220px;
+                            font-size: 32px;
+                            position: relative;
+                            color: $theme-c;         
+                        }
+                    }
+                    div.lnimg::before{
+                        content: "";
+                        height: 100%;
+                        width: 100%;
+                        position: absolute;
+                        top: 0;
+                        left: 0;
+                        background-size: cover;
+                        background-position: center;
+                    }
+                    div.lnimg:hover::before {
+                        filter: blur(2px);
+                        -webkit-filter: blur(2px);
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
 
 
 

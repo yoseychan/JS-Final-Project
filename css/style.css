@@ -391,4 +391,69 @@ div.about div.container div.row div.col-12 h2 {
   font-size: 32px;
 }
 
+.lnimg1::before {
+  background-image: url("../img/city.jpg");
+}
+
+.lnimg2::before {
+  background-image: url("../img/manor.jpg");
+}
+
+.lnimg3::before {
+  background-image: url("../img/palace.jpg");
+}
+
+.lnimg4::before {
+  background-image: url("../img/path.jpg");
+}
+
+.lnimg5::before {
+  background-image: url("../img/sea.jpg");
+}
+
+.lnimg6::before {
+  background-image: url("../img/swamp.jpg");
+}
+
+div.land div.container div.row div.col-12 h1 {
+  font-size: 32px;
+  margin: 50px 0;
+  text-align: center;
+  color: #343930;
+}
+div.land div.container div.row div.col-12 a {
+  text-decoration: none;
+}
+div.land div.container div.row div.col-12 a div.lnimg {
+  border: 1px solid #e2ded6;
+  height: 300px;
+  margin-bottom: 15px;
+  text-align: center;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: 0.6s;
+}
+div.land div.container div.row div.col-12 a div.lnimg h2 {
+  margin-top: 220px;
+  font-size: 32px;
+  position: relative;
+  color: #e8cba6;
+}
+div.land div.container div.row div.col-12 a div.lnimg::before {
+  content: "";
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-size: cover;
+  background-position: center;
+}
+div.land div.container div.row div.col-12 a div.lnimg:hover::before {
+  filter: blur(2px);
+  -webkit-filter: blur(2px);
+}
+
 /*# sourceMappingURL=style.css.map */
