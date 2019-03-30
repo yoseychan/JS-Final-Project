@@ -3,7 +3,9 @@
 @import 'header';
 @import 'footer';
 
-
+body {
+    background-color: $theme-g;
+}
 // HOMEPAGE HERO
 
 div.hero {
@@ -137,7 +139,6 @@ div.mainline1 {
 // RULES
 
 div.mainline2 {
-
     div.container{
         div.row {
             div.sq {
@@ -199,3 +200,53 @@ div.mainline3 {
         }
     }
 }
+
+// LOGIN / REGISTER
+
+div.logreg {
+    background-color: $theme-darkc;
+    div.container{
+        min-height: 800px;  
+        div.row{ 
+            div.col-12 {
+                font-family: $font-Robo;
+                color:$theme-g;
+                text-align: center;
+                h2{
+                    margin-top:60px;
+                    font-size: 32px; 
+                }
+                form{
+                    div{
+                        margin-top: 20px;
+                        text-decoration: none;
+                        input{
+                            height: 40px;
+                            width: 70%;
+                            border: 1px solid $theme-c;
+                            font-size: 14px;
+                            background-color: $theme-lightc;
+                            color:$theme-g;
+                        }
+                        input[type="submit"] {
+                            background-color: $theme-g;
+                            color: $theme-c;
+                            transition: .6s;
+                            margin: 10px 0 20px 0;
+                            width: 50%;
+                            font-size: 24px;   
+                        }
+                        input[type="submit"]:hover {
+                            background-color: $theme-or-trans;
+                            border: 1px solid $theme-g;
+                            color: $theme-g;    
+                        } 
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+
