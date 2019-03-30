@@ -257,6 +257,9 @@ div.mainline1 div.text div.col div.starred p {
   margin-bottom: 10px;
 }
 
+div.mainline2 {
+  width: 100vw;
+}
 div.mainline2 div.container div.row div.sq p {
   display: inline-block;
   text-align: center;
@@ -307,6 +310,7 @@ div.mainline3 div.container div.row div.back a:hover {
 }
 
 div.logreg {
+  width: 100vw;
   background-color: #bea37e;
 }
 div.logreg div.container {
@@ -370,6 +374,7 @@ div.logreg div.container div.row div.col-12 form div input[type=submit]:hover {
 }
 
 div.about {
+  width: 100vw;
   background-color: #bea37e;
 }
 div.about div.container div.row div.col-12 {
@@ -384,6 +389,7 @@ div.about div.container div.row div.col-12 div.text {
 div.about div.container div.row div.col-12 div.text p {
   font-size: 16px;
   margin-bottom: 50px;
+  font-family: "Leckerli One", cursive;
 }
 div.about div.container div.row div.col-12 h2 {
   margin: 40px;
@@ -415,6 +421,9 @@ div.about div.container div.row div.col-12 h2 {
   background-image: url("../img/swamp.jpg");
 }
 
+div.land {
+  width: 100vw;
+}
 div.land div.container div.row div.col-12 h1 {
   font-size: 32px;
   margin: 50px 0;
@@ -433,7 +442,7 @@ div.land div.container div.row div.col-12 a div.lnimg {
   display: flex;
   justify-content: center;
   align-items: center;
-  transition: 0.6s;
+  transition: 0.3s;
 }
 div.land div.container div.row div.col-12 a div.lnimg h2 {
   margin-top: 220px;
@@ -454,6 +463,59 @@ div.land div.container div.row div.col-12 a div.lnimg::before {
 div.land div.container div.row div.col-12 a div.lnimg:hover::before {
   filter: blur(2px);
   -webkit-filter: blur(2px);
+}
+
+div.gallery {
+  width: 100vw;
+}
+div.gallery div.container div.row div.col-12 a {
+  text-decoration: none;
+  transition: 0.3s;
+}
+div.gallery div.container div.row div.col-12 a div.gimg {
+  height: 400px;
+  text-align: center;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+div.gallery div.container div.row div.col-12 a div.gimg h2 {
+  font-size: 32px;
+  position: relative;
+  color: #e2ded6;
+}
+div.gallery div.container div.row div.col-12 a div.gimg::before {
+  content: "";
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-size: cover;
+  background-position: center;
+  transition: 0.3s;
+}
+div.gallery div.container div.row div.col-12 a div.gimg:hover::before {
+  filter: blur(2px);
+  -webkit-filter: blur(2px);
+}
+div.gallery div.container div.row div.col-12 a div.gimg1::before {
+  background-image: url("../img/livingroom1.jpg");
+}
+div.gallery div.container div.row div.col-12 a div.gimg2::before {
+  background-image: url("../img/horse1.jpg");
+}
+div.gallery div.container div.row div.col-12 a div.gimg3::before {
+  background-image: url("../img/autumn1.jpg");
+}
+
+div.specgal div.container div.row div.col-12 div img {
+  margin: 15px 0;
+  width: 100%;
+}
+div.specgal div.container div.row div.col-12 div img:hover {
+  cursor: pointer;
 }
 
 /*# sourceMappingURL=style.css.map */

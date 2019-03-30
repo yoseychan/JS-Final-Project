@@ -137,6 +137,7 @@ div.mainline1 {
 // RULES
 
 div.mainline2 {
+    width: 100vw;
     div.container{
         div.row {
             div.sq {
@@ -200,6 +201,7 @@ div.mainline3 {
 // LOGIN / REGISTER
 
 div.logreg {
+    width: 100vw;
     background-color: $theme-darkc;
     div.container{
         min-height: 800px;  
@@ -267,6 +269,7 @@ div.logreg {
 }
 
 div.about{
+    width: 100vw;
     background-color: $theme-darkc;
     div.container{
         div.row{
@@ -280,6 +283,7 @@ div.about{
                     p {
                         font-size: 16px;
                         margin-bottom: 50px;
+                        font-family: $font-Leck;
                     }
                 }
                 h2{
@@ -315,6 +319,7 @@ div.about{
 }
 
 div.land {
+    width: 100vw;
     div.container {
         div.row {
             div.col-12 {
@@ -335,7 +340,7 @@ div.land {
                         display:flex;
                         justify-content: center;
                         align-items: center;
-                        transition: .6s;
+                        transition: .3s;
                         h2 {
                             margin-top: 220px;
                             font-size: 32px;
@@ -362,20 +367,76 @@ div.land {
         }
     }
 }
+// GALLERY MENU
 
+div.gallery {
+    width: 100vw;
+    div.container{
+        div.row{
+            div.col-12{
+                a{  
+                    text-decoration: none;
+                    transition: .3s;
+                    div.gimg {
+                        height:400px;
+                        text-align: center;
+                        position: relative;
+                        display:flex;
+                        justify-content: center;
+                        align-items: center;
+                        h2{
+                            font-size: 32px;
+                            position: relative;
+                            color: $theme-lightc; 
+                        }
+                    }
+                    div.gimg::before{
+                        content: "";
+                        height: 100%;
+                        width: 100%;
+                        position: absolute;
+                        top: 0;
+                        left: 0;
+                        background-size: cover;
+                        background-position: center;
+                        transition: .3s;  
+                    }
+                    div.gimg:hover::before {
+                        filter: blur(2px);
+                        -webkit-filter: blur(2px);
+                    }
+                    div.gimg1::before {
+                        background-image: url('../img/livingroom1.jpg');
+                    }
+                    div.gimg2::before {
+                        background-image: url('../img/horse1.jpg');
+                    }
+                    div.gimg3::before {
+                        background-image: url('../img/autumn1.jpg');
+                    }   
+                }
+            }
+        }
+    }
+}
+//GALLERY Accomodation, Events and Seasons
 
-
-
-
-
-
-
-
-
-
-
-
-
-
+div.specgal {
+    div.container {
+        div.row {
+            div.col-12 {
+               div {
+                    img {
+                        margin:15px 0;
+                        width:100%;                    
+                    }
+                    img:hover {
+                        cursor: pointer;
+                    }
+                }
+            }
+        }
+    }
+}
 
 
