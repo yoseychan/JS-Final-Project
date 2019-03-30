@@ -140,6 +140,7 @@ div.footer div.container div.flower p span {
 
 body {
   background-color: #343930;
+  font-family: "Roboto Slab", serif;
 }
 
 div.hero {
@@ -159,7 +160,6 @@ div.hero div.row div.col {
 div.hero div.row div.col a {
   background-color: rgba(52, 57, 48, 0.8);
   color: #e8cba6;
-  font-family: "Roboto Slab", serif;
   font-size: 36px;
   text-decoration: none;
   padding: 5px 50px;
@@ -173,7 +173,6 @@ div.hero div.row div.col a:hover {
 div.ghouse {
   width: 100vw;
   height: 450px;
-  font-family: "Roboto Slab", serif;
   color: #343930;
 }
 div.ghouse div.container {
@@ -234,7 +233,6 @@ div.ghouse div.container div.row div.col div.button a.land:hover {
 
 div.mainline1 {
   width: 100vw;
-  font-family: "Roboto Slab", serif;
   color: #343930;
 }
 div.mainline1 div.prev {
@@ -261,7 +259,6 @@ div.mainline1 div.text div.col div.starred p {
 
 div.mainline2 div.container div.row div.sq p {
   display: inline-block;
-  font-family: "Roboto Slab", serif;
   text-align: center;
   margin: 10px 10px 25px 10px;
 }
@@ -279,7 +276,6 @@ div.mainline3 div.container {
 }
 div.mainline3 div.container div.row {
   font-size: 24px;
-  font-family: "Roboto Slab", serif;
 }
 div.mainline3 div.container div.row div.res div.button {
   margin-top: 35px;
@@ -317,7 +313,6 @@ div.logreg div.container {
   min-height: 800px;
 }
 div.logreg div.container div.row div.col-12 {
-  font-family: "Roboto Slab", serif;
   color: #343930;
   text-align: center;
 }
@@ -349,6 +344,51 @@ div.logreg div.container div.row div.col-12 form div input[type=submit]:hover {
   background-color: rgba(252, 168, 132, 0.8);
   border: 1px solid #343930;
   color: #343930;
+}
+
+.abimg1 {
+  background-image: url("../img/face1.png");
+}
+
+.abimg2 {
+  background-image: url("../img/face2.png");
+}
+
+.abimg3 {
+  background-image: url("../img/dogo.jpg");
+  border: 1px solid #e8cba6;
+}
+
+.abimg {
+  height: 150px;
+  width: 150px;
+  margin: 20px auto;
+  border-radius: 50%;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+div.about {
+  background-color: #bea37e;
+}
+div.about div.container div.row div.col-12 {
+  color: #343930;
+}
+div.about div.container div.row div.col-12 div.text {
+  width: 60%;
+  height: 30%;
+  margin: 0 auto;
+  text-align: center;
+}
+div.about div.container div.row div.col-12 div.text p {
+  font-size: 16px;
+  margin-bottom: 50px;
+}
+div.about div.container div.row div.col-12 h2 {
+  margin: 40px;
+  text-align: center;
+  font-size: 32px;
 }
 
 /*# sourceMappingURL=style.css.map */

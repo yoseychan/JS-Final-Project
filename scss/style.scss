@@ -5,6 +5,7 @@
 
 body {
     background-color: $theme-g;
+    font-family: $font-Robo;
 }
 // HOMEPAGE HERO
 
@@ -22,7 +23,6 @@ div.hero {
             a {
                 background-color: $theme-g-trans;
                 color: $theme-c;
-                font-family: $font-Robo;
                 font-size: 36px;
                 text-decoration: none;
                 padding: 5px 50px;
@@ -41,7 +41,6 @@ div.hero {
 div.ghouse {
     width: 100vw;
     height: 450px;
-    font-family: $font-Robo;
     color: $theme-g;
     div.container {
         height:450px;
@@ -107,7 +106,6 @@ div.ghouse {
 // PREVIEW AND PRICE
 div.mainline1 {
     width: 100vw;
-    font-family: $font-Robo;
     color: $theme-g;
     div.prev {
         height:400px;   
@@ -144,7 +142,6 @@ div.mainline2 {
             div.sq {
                 p{  
                     display: inline-block;
-                    font-family: $font-Robo;
                     text-align: center;
                     margin: 10px 10px 25px 10px;
                 
@@ -166,7 +163,6 @@ div.mainline3 {
         height: 100px;
         div.row {
             font-size: 24px;
-            font-family: $font-Robo;
             div.res {                
                 div.button{
                     margin-top: 35px;
@@ -209,7 +205,6 @@ div.logreg {
         min-height: 800px;  
         div.row{ 
             div.col-12 {
-                font-family: $font-Robo;
                 color:$theme-g;
                 text-align: center;
                 h2{
@@ -247,6 +242,59 @@ div.logreg {
         }
     }
 }
+
+// ABOUT US 
+
+.abimg1 {
+    background-image: url('../img/face1.png') ;
+}
+.abimg2 {
+    background-image: url('../img/face2.png') ;
+
+}
+.abimg3 {
+    background-image: url('../img/dogo.jpg') ;
+    border: 1px solid $theme-c;
+}
+.abimg {
+    height: 150px;
+    width: 150px;
+    margin:20px auto;
+    border-radius: 50%;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+div.about{
+    background-color: $theme-darkc;
+    div.container{
+        div.row{
+            div.col-12{
+                color: $theme-g;
+                
+                div.text {
+                    width: 60%;
+                    height: 30%;
+                    margin: 0 auto;
+                    text-align: center;
+                    p {
+                        font-size: 16px;
+                        margin-bottom: 50px;
+                    }
+                }
+                h2{
+                    margin: 40px;
+                    text-align: center;
+                    font-size: 32px;
+                }
+            }
+        }
+    }
+}
+
+
+
 
 
 
