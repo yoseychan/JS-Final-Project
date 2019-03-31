@@ -438,5 +438,86 @@ div.specgal {
         }
     }
 }
+//Reservation details 
+
+.oran {
+    background-color: $theme-or;
+}
+div.resdetails {
+    max-width: 1920px;
+    background-color: $theme-darkc;
+    div.container {
+        div.hid{
+            overflow: hidden;
+            background-color: $theme-lightc; 
+            div.prog {
+                height: 30px;
+                width: 33%;
+                float: left;
+                h3 {
+                    margin-top: 5px;
+                    text-align: center;
+                    font-size: 18px;   
+                }
+            }
+        }
+        div.details {
+            background-color: $theme-c;
+            div.calbox{
+                overflow: hidden;
+                div.cal{
+                    height:250px;
+                    width:50%;
+                    float:left;
+                    border: 1px solid $theme-g;
+                }
+            }
+            div.formbox{ 
+                form{
+                    border: 1px solid $theme-g;
+                    div.form{
+                        width: 300px;
+                        height:50px;
+                        margin: 0 auto;
+                        input{
+                            margin: 10px 0 20px 0;
+                            border: 1px solid $theme-c;
+                        }
+                        input[type="text"] {
+                            width: 40px;
+                            height:30px;
+                            text-align: center;
+                        }
+                        input[type="checkbox"] {
+                            font-size: 24px;     
+                        }
+
+                    }  
+                }
+            }
+        } 
+        div.weather{
+            height:100px;
+            background-color: $theme-lightc;
+            font-size: 24px;
+            div.middle{
+                text-align: center;
+                
+            }
+        }
+    }
+}
+.marweather {
+    margin-top: 40px;
+}
+
+//Payment Method
+
+
+
+
+
+//Invoice
+
 
 

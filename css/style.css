@@ -518,4 +518,71 @@ div.specgal div.container div.row div.col-12 div img:hover {
   cursor: pointer;
 }
 
+.oran {
+  background-color: #e99573;
+}
+
+div.resdetails {
+  max-width: 1920px;
+  background-color: #bea37e;
+}
+div.resdetails div.container div.hid {
+  overflow: hidden;
+  background-color: #e2ded6;
+}
+div.resdetails div.container div.hid div.prog {
+  height: 30px;
+  width: 33%;
+  float: left;
+}
+div.resdetails div.container div.hid div.prog h3 {
+  margin-top: 5px;
+  text-align: center;
+  font-size: 18px;
+}
+div.resdetails div.container div.details {
+  background-color: #e8cba6;
+}
+div.resdetails div.container div.details div.calbox {
+  overflow: hidden;
+}
+div.resdetails div.container div.details div.calbox div.cal {
+  height: 250px;
+  width: 50%;
+  float: left;
+  border: 1px solid #343930;
+}
+div.resdetails div.container div.details div.formbox form {
+  border: 1px solid #343930;
+}
+div.resdetails div.container div.details div.formbox form div.form {
+  width: 300px;
+  height: 50px;
+  margin: 0 auto;
+}
+div.resdetails div.container div.details div.formbox form div.form input {
+  margin: 10px 0 20px 0;
+  border: 1px solid #e8cba6;
+}
+div.resdetails div.container div.details div.formbox form div.form input[type=text] {
+  width: 40px;
+  height: 30px;
+  text-align: center;
+}
+div.resdetails div.container div.details div.formbox form div.form input[type=checkbox] {
+  font-size: 24px;
+}
+div.resdetails div.container div.weather {
+  height: 100px;
+  background-color: #e2ded6;
+  font-size: 24px;
+}
+div.resdetails div.container div.weather div.middle {
+  text-align: center;
+}
+
+.marweather {
+  margin-top: 40px;
+}
+
 /*# sourceMappingURL=style.css.map */
