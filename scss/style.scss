@@ -473,8 +473,8 @@ div.resdetails {
                 }
             }
             div.formbox{ 
+                border: 1px solid $theme-g;
                 form{
-                    border: 1px solid $theme-g;
                     div.form{
                         width: 300px;
                         height:50px;
@@ -505,13 +505,45 @@ div.resdetails {
                 
             }
         }
+        div.total {
+            a{
+                text-decoration: none;
+                div.topay {
+                    height:38px;
+                    background-color: $theme-g;
+                    color: $theme-c;
+                    text-align: center;
+                    font-size: 32px;
+                    transition: .6s; 
+                }
+                div.topay:hover {
+                    text-decoration: none;
+                    background-color: $theme-c;
+                    color: $theme-g;
+                    border: 1px solid $theme-g;
+                }
+            }
+        }
     }
 }
+
 .marweather {
     margin-top: 40px;
 }
+.list {
+    height: 90%;
+}
+.topay {
+    height: 10%;
+    width: 100%;
+    background-color: $theme-g;
+}
+
+
 
 //Payment Method
+
+
 
 
 

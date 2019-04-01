@@ -552,7 +552,7 @@ div.resdetails div.container div.details div.calbox div.cal {
   float: left;
   border: 1px solid #343930;
 }
-div.resdetails div.container div.details div.formbox form {
+div.resdetails div.container div.details div.formbox {
   border: 1px solid #343930;
 }
 div.resdetails div.container div.details div.formbox form div.form {
@@ -580,9 +580,36 @@ div.resdetails div.container div.weather {
 div.resdetails div.container div.weather div.middle {
   text-align: center;
 }
+div.resdetails div.container div.total a {
+  text-decoration: none;
+}
+div.resdetails div.container div.total a div.topay {
+  height: 38px;
+  background-color: #343930;
+  color: #e8cba6;
+  text-align: center;
+  font-size: 32px;
+  transition: 0.6s;
+}
+div.resdetails div.container div.total a div.topay:hover {
+  text-decoration: none;
+  background-color: #e8cba6;
+  color: #343930;
+  border: 1px solid #343930;
+}
 
 .marweather {
   margin-top: 40px;
+}
+
+.list {
+  height: 90%;
+}
+
+.topay {
+  height: 10%;
+  width: 100%;
+  background-color: #343930;
 }
 
 /*# sourceMappingURL=style.css.map */
