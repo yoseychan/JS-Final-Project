@@ -24,14 +24,18 @@ div.header {
                                 color: $theme-c;
                                 font-size: 22px;
                                 padding: 21px;
+                                padding-top: 37px;
                                 transition: .6s;
-                                font-family: $font-Robo;
                            
                             }
                             a.micasa {
                                 font-size: 46px;
                                 font-family: $font-Leck;
                                 padding: 17px;
+                            }
+                            a.micasa:hover {
+                                background-color: $theme-g;
+                                color:$theme-c;
                             }
                             a:hover {
                                 color: $theme-g;

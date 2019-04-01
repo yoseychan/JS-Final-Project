@@ -6,7 +6,60 @@
 body {
     background-color: $theme-g;
     font-family: $font-Robo;
+    overflow-x: hidden;
 }
+//Color schemes for background
+.lighter{
+    background-color: $theme-lightc;
+}
+.darker{
+    background-color: $theme-g;
+}
+.darkerc{
+    background-color: $theme-darkc;
+}
+//frame for banners
+.lighterb{
+    border:2px solid $theme-g;
+    background-color: $theme-lightc;
+    color: $theme-g;
+}
+.darkerb{
+    border:2px solid $theme-c;
+    background-color: $theme-g;
+    color: $theme-c;
+}
+//buttons
+.darkera{
+    color: $theme-c;
+    background-color: $theme-g;
+}
+.lightera{
+    color: $theme-g;
+    background-color: $theme-lightc;
+}
+.mixed {
+    color:$theme-g;
+    background-color: $theme-lightc;
+    border: 1px solid $theme-g;    
+}
+//buttons on hover
+.lightera:hover {
+    border: 1px solid $theme-lightc;
+    color:$theme-lightc;
+    background-color: $theme-g;
+}
+.darkera:hover {
+    background-color: $theme-lightc;
+    color: $theme-g;
+    border: 1px solid $theme-g;    
+}
+.mixed:hover{
+    color: $theme-g;
+    background-color: $theme-c;
+}
+
+
 // HOMEPAGE HERO
 
 div.hero {
@@ -41,7 +94,6 @@ div.hero {
 div.ghouse {
     width: 100vw;
     height: 450px;
-    color: $theme-g;
     div.container {
         height:450px;
         div.row {
@@ -63,6 +115,7 @@ div.ghouse {
                     margin: 0 auto;
                     p{
                         font-size: 18px;
+
                     }
                 }
                 div.button {
@@ -70,37 +123,14 @@ div.ghouse {
                     a{
                         text-decoration: none;
                         font-size: 20px;
-                        color: $theme-c;
-                        background-color: $theme-g;
                         padding: 5px 30px;
                         transition: .6s; 
-                    }    
-                    a.land{
-                            background-color: $theme-or;
-                            color: $theme-g;
-                            transition: .6s;
-                    }    
-                    
-                    a:hover {
-                        background-color: $theme-or;
-                        color: $theme-g;    
-                    }
-                    a.land:hover {
-                        border: 1px solid $theme-g;
                     }
                 }
             }
-        } 
+        }
     }
 }
-
-.lighter{
-    background-color: $theme-lightc;
-}
-.darker{
-    background-color: $theme-c;
-}
-
 // GUEST HOUSE and Rooms
 
 // PREVIEW AND PRICE
@@ -141,27 +171,32 @@ div.mainline2 {
     div.container{
         div.row {
             div.sq {
+                div.imgplace {
+                    img{
+                        width: 100px;
+                        display:block;
+                        margin:0 auto;                        
+                    }
+                }
                 p{  
                     display: inline-block;
                     text-align: center;
-                    margin: 10px 10px 25px 10px;
+                    margin: 20px 10px 65px 10px;
+                    color: $theme-lightc;
                 
                 }
             }
         }
     }
 }
-.imgplace{
-    height:200px;
-}
 
 //RESERVATION BUTTON
 
 div.mainline3 {
     width: 100vw;
-    height: 100px;
+    height: 90px;
     div.container {
-        height: 100px;
+        height: 100%;
         div.row {
             font-size: 24px;
             div.res {                
@@ -169,16 +204,16 @@ div.mainline3 {
                     margin-top: 35px;
                     text-align: center;
                     a {
-                        color: $theme-c;
+                        color: $theme-lightc;
                         background-color: $theme-g;
                         padding: 5px 40px;
                         transition:.6s;                         
                     }
                     a:hover {
                         text-decoration: none;
-                        background-color: $theme-or;
+                        background-color: $theme-c;
                         color:$theme-g;
-                    }
+                    }     
                 }
             }
             div.back{
@@ -190,8 +225,9 @@ div.mainline3 {
                 }
                 a:hover {
                     text-decoration: none;
-                    background-color: $theme-or;
                     color:$theme-g;
+                    border-bottom: 2px solid $theme-g;
+                    
                 }
             }
         }
@@ -204,6 +240,7 @@ div.logreg {
     width: 100vw;
     background-color: $theme-darkc;
     div.container{
+        background-color: $theme-c;
         min-height: 800px;  
         div.row{ 
             div.col-12 {
@@ -234,9 +271,10 @@ div.logreg {
                             font-size: 24px;   
                         }
                         input[type="submit"]:hover {
-                            background-color: $theme-or-trans;
+                            background-color: $theme-lightc;
                             border: 1px solid $theme-g;
-                            color: $theme-g;    
+                            color: $theme-g; 
+                            cursor: pointer;   
                         } 
                     }
                 }
@@ -273,17 +311,17 @@ div.about{
     background-color: $theme-darkc;
     div.container{
         div.row{
-            div.col-12{
-                color: $theme-g;
+            div.col-12{ 
                 div.text {
                     width: 60%;
                     height: 30%;
                     margin: 0 auto;
                     text-align: center;
                     p {
-                        font-size: 16px;
+                        font-size: 18px;
                         margin-bottom: 50px;
                         font-family: $font-Leck;
+                        color: $theme-g;
                     }
                 }
                 h2{
@@ -320,7 +358,9 @@ div.about{
 
 div.land {
     width: 100vw;
+    background-color: $theme-c;
     div.container {
+        background-color: $theme-c;
         div.row {
             div.col-12 {
                 h1 {
@@ -371,9 +411,17 @@ div.land {
 
 div.gallery {
     width: 100vw;
+    background-color: $theme-darkc;
     div.container{
         div.row{
             div.col-12{
+                background-color: $theme-lightc;
+                h1 {
+                    margin: 40px;
+                    text-align: center;
+                    font-size: 32px;
+                    color: $theme-g;
+                }
                 a{  
                     text-decoration: none;
                     transition: .3s;
@@ -399,7 +447,7 @@ div.gallery {
                         left: 0;
                         background-size: cover;
                         background-position: center;
-                        transition: .3s;  
+                        transition: .6s;  
                     }
                     div.gimg:hover::before {
                         filter: blur(2px);
@@ -422,7 +470,10 @@ div.gallery {
 //GALLERY Accomodation, Events and Seasons
 
 div.specgal {
+    width: 100vw;
+    background-color: $theme-darkc;
     div.container {
+        background-color: $theme-lightc;
         div.row {
             div.col-12 {
                div {
@@ -491,7 +542,6 @@ div.resdetails {
                         input[type="checkbox"] {
                             font-size: 24px;     
                         }
-
                     }  
                 }
             }
@@ -501,8 +551,7 @@ div.resdetails {
             background-color: $theme-lightc;
             font-size: 24px;
             div.middle{
-                text-align: center;
-                
+                text-align: center;   
             }
         }
         div.total {
@@ -538,18 +587,3 @@ div.resdetails {
     width: 100%;
     background-color: $theme-g;
 }
-
-
-
-//Payment Method
-
-
-
-
-
-
-
-//Invoice
-
-
-

@@ -72,13 +72,17 @@ div.header div.container div.row div.hnav nav ul li a {
   color: #e8cba6;
   font-size: 22px;
   padding: 21px;
+  padding-top: 37px;
   transition: 0.6s;
-  font-family: "Roboto Slab", serif;
 }
 div.header div.container div.row div.hnav nav ul li a.micasa {
   font-size: 46px;
   font-family: "Leckerli One", cursive;
   padding: 17px;
+}
+div.header div.container div.row div.hnav nav ul li a.micasa:hover {
+  background-color: #343930;
+  color: #e8cba6;
 }
 div.header div.container div.row div.hnav nav ul li a:hover {
   color: #343930;
@@ -141,6 +145,64 @@ div.footer div.container div.flower p span {
 body {
   background-color: #343930;
   font-family: "Roboto Slab", serif;
+  overflow-x: hidden;
+}
+
+.lighter {
+  background-color: #f7ecdf;
+}
+
+.darker {
+  background-color: #343930;
+}
+
+.darkerc {
+  background-color: #bea37e;
+}
+
+.lighterb {
+  border: 2px solid #343930;
+  background-color: #f7ecdf;
+  color: #343930;
+}
+
+.darkerb {
+  border: 2px solid #e8cba6;
+  background-color: #343930;
+  color: #e8cba6;
+}
+
+.darkera {
+  color: #e8cba6;
+  background-color: #343930;
+}
+
+.lightera {
+  color: #343930;
+  background-color: #f7ecdf;
+}
+
+.mixed {
+  color: #343930;
+  background-color: #f7ecdf;
+  border: 1px solid #343930;
+}
+
+.lightera:hover {
+  border: 1px solid #f7ecdf;
+  color: #f7ecdf;
+  background-color: #343930;
+}
+
+.darkera:hover {
+  background-color: #f7ecdf;
+  color: #343930;
+  border: 1px solid #343930;
+}
+
+.mixed:hover {
+  color: #343930;
+  background-color: #e8cba6;
 }
 
 div.hero {
@@ -173,7 +235,6 @@ div.hero div.row div.col a:hover {
 div.ghouse {
   width: 100vw;
   height: 450px;
-  color: #343930;
 }
 div.ghouse div.container {
   height: 450px;
@@ -205,30 +266,8 @@ div.ghouse div.container div.row div.col div.button {
 div.ghouse div.container div.row div.col div.button a {
   text-decoration: none;
   font-size: 20px;
-  color: #e8cba6;
-  background-color: #343930;
   padding: 5px 30px;
   transition: 0.6s;
-}
-div.ghouse div.container div.row div.col div.button a.land {
-  background-color: #e99573;
-  color: #343930;
-  transition: 0.6s;
-}
-div.ghouse div.container div.row div.col div.button a:hover {
-  background-color: #e99573;
-  color: #343930;
-}
-div.ghouse div.container div.row div.col div.button a.land:hover {
-  border: 1px solid #343930;
-}
-
-.lighter {
-  background-color: #e2ded6;
-}
-
-.darker {
-  background-color: #e8cba6;
 }
 
 div.mainline1 {
@@ -260,22 +299,24 @@ div.mainline1 div.text div.col div.starred p {
 div.mainline2 {
   width: 100vw;
 }
+div.mainline2 div.container div.row div.sq div.imgplace img {
+  width: 100px;
+  display: block;
+  margin: 0 auto;
+}
 div.mainline2 div.container div.row div.sq p {
   display: inline-block;
   text-align: center;
-  margin: 10px 10px 25px 10px;
-}
-
-.imgplace {
-  height: 200px;
+  margin: 20px 10px 65px 10px;
+  color: #f7ecdf;
 }
 
 div.mainline3 {
   width: 100vw;
-  height: 100px;
+  height: 90px;
 }
 div.mainline3 div.container {
-  height: 100px;
+  height: 100%;
 }
 div.mainline3 div.container div.row {
   font-size: 24px;
@@ -285,14 +326,14 @@ div.mainline3 div.container div.row div.res div.button {
   text-align: center;
 }
 div.mainline3 div.container div.row div.res div.button a {
-  color: #e8cba6;
+  color: #f7ecdf;
   background-color: #343930;
   padding: 5px 40px;
   transition: 0.6s;
 }
 div.mainline3 div.container div.row div.res div.button a:hover {
   text-decoration: none;
-  background-color: #e99573;
+  background-color: #e8cba6;
   color: #343930;
 }
 div.mainline3 div.container div.row div.back {
@@ -305,8 +346,8 @@ div.mainline3 div.container div.row div.back a {
 }
 div.mainline3 div.container div.row div.back a:hover {
   text-decoration: none;
-  background-color: #e99573;
   color: #343930;
+  border-bottom: 2px solid #343930;
 }
 
 div.logreg {
@@ -314,6 +355,7 @@ div.logreg {
   background-color: #bea37e;
 }
 div.logreg div.container {
+  background-color: #e8cba6;
   min-height: 800px;
 }
 div.logreg div.container div.row div.col-12 {
@@ -333,7 +375,7 @@ div.logreg div.container div.row div.col-12 form div input {
   width: 70%;
   border: 1px solid #e8cba6;
   font-size: 14px;
-  background-color: #e2ded6;
+  background-color: #f7ecdf;
   color: #343930;
 }
 div.logreg div.container div.row div.col-12 form div input[type=submit] {
@@ -345,9 +387,10 @@ div.logreg div.container div.row div.col-12 form div input[type=submit] {
   font-size: 24px;
 }
 div.logreg div.container div.row div.col-12 form div input[type=submit]:hover {
-  background-color: rgba(252, 168, 132, 0.8);
+  background-color: #f7ecdf;
   border: 1px solid #343930;
   color: #343930;
+  cursor: pointer;
 }
 
 .abimg1 {
@@ -377,9 +420,6 @@ div.about {
   width: 100vw;
   background-color: #bea37e;
 }
-div.about div.container div.row div.col-12 {
-  color: #343930;
-}
 div.about div.container div.row div.col-12 div.text {
   width: 60%;
   height: 30%;
@@ -387,9 +427,10 @@ div.about div.container div.row div.col-12 div.text {
   text-align: center;
 }
 div.about div.container div.row div.col-12 div.text p {
-  font-size: 16px;
+  font-size: 18px;
   margin-bottom: 50px;
   font-family: "Leckerli One", cursive;
+  color: #343930;
 }
 div.about div.container div.row div.col-12 h2 {
   margin: 40px;
@@ -423,6 +464,10 @@ div.about div.container div.row div.col-12 h2 {
 
 div.land {
   width: 100vw;
+  background-color: #e8cba6;
+}
+div.land div.container {
+  background-color: #e8cba6;
 }
 div.land div.container div.row div.col-12 h1 {
   font-size: 32px;
@@ -434,7 +479,7 @@ div.land div.container div.row div.col-12 a {
   text-decoration: none;
 }
 div.land div.container div.row div.col-12 a div.lnimg {
-  border: 1px solid #e2ded6;
+  border: 1px solid #f7ecdf;
   height: 300px;
   margin-bottom: 15px;
   text-align: center;
@@ -467,6 +512,16 @@ div.land div.container div.row div.col-12 a div.lnimg:hover::before {
 
 div.gallery {
   width: 100vw;
+  background-color: #bea37e;
+}
+div.gallery div.container div.row div.col-12 {
+  background-color: #f7ecdf;
+}
+div.gallery div.container div.row div.col-12 h1 {
+  margin: 40px;
+  text-align: center;
+  font-size: 32px;
+  color: #343930;
 }
 div.gallery div.container div.row div.col-12 a {
   text-decoration: none;
@@ -483,7 +538,7 @@ div.gallery div.container div.row div.col-12 a div.gimg {
 div.gallery div.container div.row div.col-12 a div.gimg h2 {
   font-size: 32px;
   position: relative;
-  color: #e2ded6;
+  color: #f7ecdf;
 }
 div.gallery div.container div.row div.col-12 a div.gimg::before {
   content: "";
@@ -494,7 +549,7 @@ div.gallery div.container div.row div.col-12 a div.gimg::before {
   left: 0;
   background-size: cover;
   background-position: center;
-  transition: 0.3s;
+  transition: 0.6s;
 }
 div.gallery div.container div.row div.col-12 a div.gimg:hover::before {
   filter: blur(2px);
@@ -510,6 +565,13 @@ div.gallery div.container div.row div.col-12 a div.gimg3::before {
   background-image: url("../img/autumn1.jpg");
 }
 
+div.specgal {
+  width: 100vw;
+  background-color: #bea37e;
+}
+div.specgal div.container {
+  background-color: #f7ecdf;
+}
 div.specgal div.container div.row div.col-12 div img {
   margin: 15px 0;
   width: 100%;
@@ -528,7 +590,7 @@ div.resdetails {
 }
 div.resdetails div.container div.hid {
   overflow: hidden;
-  background-color: #e2ded6;
+  background-color: #f7ecdf;
 }
 div.resdetails div.container div.hid div.prog {
   height: 30px;
@@ -574,7 +636,7 @@ div.resdetails div.container div.details div.formbox form div.form input[type=ch
 }
 div.resdetails div.container div.weather {
   height: 100px;
-  background-color: #e2ded6;
+  background-color: #f7ecdf;
   font-size: 24px;
 }
 div.resdetails div.container div.weather div.middle {
