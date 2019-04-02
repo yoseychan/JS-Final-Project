@@ -283,17 +283,23 @@ div.logreg {
     }
 }
 
+.redtext {
+    color:red;
+    font-size: 16px;
+    margin: 20px;    
+}
+
 // ABOUT US 
 
 .abimg1 {
-    background-image: url('../img/face1.png') ;
+    background-image: url('../img/about/face1.png') ;
 }
 .abimg2 {
-    background-image: url('../img/face2.png') ;
+    background-image: url('../img/about/face2.png') ;
 
 }
 .abimg3 {
-    background-image: url('../img/dogo.jpg') ;
+    background-image: url('../img/about/dogo.jpg') ;
     border: 1px solid $theme-c;
 }
 .abimg {
@@ -338,22 +344,22 @@ div.about{
 
 
 .lnimg1::before{
-    background-image: url('../img/city.jpg');
+    background-image: url('../img/landmarks/city.jpg');
 }
 .lnimg2::before{
-    background-image: url('../img/manor.jpg');
+    background-image: url('../img/landmarks/manor.jpg');
 }
 .lnimg3::before{
-    background-image: url('../img/palace.jpg');
+    background-image: url('../img/landmarks/palace.jpg');
 }
 .lnimg4::before{
-    background-image: url('../img/path.jpg');
+    background-image: url('../img/landmarks/path.jpg');
 }
 .lnimg5::before{
-    background-image: url('../img/sea.jpg');
+    background-image: url('../img/landmarks/sea.jpg');
 }
 .lnimg6::before{
-    background-image: url('../img/swamp.jpg');
+    background-image: url('../img/landmarks/swamp.jpg');
 }
 
 div.land {
@@ -454,13 +460,13 @@ div.gallery {
                         -webkit-filter: blur(2px);
                     }
                     div.gimg1::before {
-                        background-image: url('../img/livingroom1.jpg');
+                        background-image: url('../img/gallery/accom/livingroom1.jpg');
                     }
                     div.gimg2::before {
-                        background-image: url('../img/horse1.jpg');
+                        background-image: url('../img/gallery/events/horse1.jpg');
                     }
                     div.gimg3::before {
-                        background-image: url('../img/autumn1.jpg');
+                        background-image: url('../img/gallery/seasons/autumn1.jpg');
                     }   
                 }
             }
@@ -475,6 +481,12 @@ div.specgal {
     div.container {
         background-color: $theme-lightc;
         div.row {
+            h1.gtitle {
+                font-size: 24px;
+                color: $theme-g;
+                text-align: center;
+                margin: 20px 0;
+            }
             div.col-12 {
                div {
                     img {
@@ -586,4 +598,28 @@ div.resdetails {
     height: 10%;
     width: 100%;
     background-color: $theme-g;
+}
+
+//SVG ANIMATION
+
+.hoverme:hover {
+    .filler{
+        animation: rotate 1s 1;
+    }
+    .circolor{
+        animation: color 1s 1;
+    }
+@keyframes rotate {
+    0% {transform: rotate(0)}
+    25% {transform: rotate(0deg)}
+    50% {transform: rotate(180deg)}
+    75% {transform: rotate(270deg)}
+    100% {transform: rotate(360deg)}
+}
+@keyframes color {
+    0% {fill: $theme-g }
+    50% {fill: rgb(250, 250, 250)}
+    100% {fill: $theme-c }
+}
+
 }

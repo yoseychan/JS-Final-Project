@@ -393,16 +393,22 @@ div.logreg div.container div.row div.col-12 form div input[type=submit]:hover {
   cursor: pointer;
 }
 
+.redtext {
+  color: red;
+  font-size: 16px;
+  margin: 20px;
+}
+
 .abimg1 {
-  background-image: url("../img/face1.png");
+  background-image: url("../img/about/face1.png");
 }
 
 .abimg2 {
-  background-image: url("../img/face2.png");
+  background-image: url("../img/about/face2.png");
 }
 
 .abimg3 {
-  background-image: url("../img/dogo.jpg");
+  background-image: url("../img/about/dogo.jpg");
   border: 1px solid #e8cba6;
 }
 
@@ -439,27 +445,27 @@ div.about div.container div.row div.col-12 h2 {
 }
 
 .lnimg1::before {
-  background-image: url("../img/city.jpg");
+  background-image: url("../img/landmarks/city.jpg");
 }
 
 .lnimg2::before {
-  background-image: url("../img/manor.jpg");
+  background-image: url("../img/landmarks/manor.jpg");
 }
 
 .lnimg3::before {
-  background-image: url("../img/palace.jpg");
+  background-image: url("../img/landmarks/palace.jpg");
 }
 
 .lnimg4::before {
-  background-image: url("../img/path.jpg");
+  background-image: url("../img/landmarks/path.jpg");
 }
 
 .lnimg5::before {
-  background-image: url("../img/sea.jpg");
+  background-image: url("../img/landmarks/sea.jpg");
 }
 
 .lnimg6::before {
-  background-image: url("../img/swamp.jpg");
+  background-image: url("../img/landmarks/swamp.jpg");
 }
 
 div.land {
@@ -556,13 +562,13 @@ div.gallery div.container div.row div.col-12 a div.gimg:hover::before {
   -webkit-filter: blur(2px);
 }
 div.gallery div.container div.row div.col-12 a div.gimg1::before {
-  background-image: url("../img/livingroom1.jpg");
+  background-image: url("../img/gallery/accom/livingroom1.jpg");
 }
 div.gallery div.container div.row div.col-12 a div.gimg2::before {
-  background-image: url("../img/horse1.jpg");
+  background-image: url("../img/gallery/events/horse1.jpg");
 }
 div.gallery div.container div.row div.col-12 a div.gimg3::before {
-  background-image: url("../img/autumn1.jpg");
+  background-image: url("../img/gallery/seasons/autumn1.jpg");
 }
 
 div.specgal {
@@ -571,6 +577,12 @@ div.specgal {
 }
 div.specgal div.container {
   background-color: #f7ecdf;
+}
+div.specgal div.container div.row h1.gtitle {
+  font-size: 24px;
+  color: #343930;
+  text-align: center;
+  margin: 20px 0;
 }
 div.specgal div.container div.row div.col-12 div img {
   margin: 15px 0;
@@ -672,6 +684,41 @@ div.resdetails div.container div.total a div.topay:hover {
   height: 10%;
   width: 100%;
   background-color: #343930;
+}
+
+.hoverme:hover .filler {
+  animation: rotate 1s 1;
+}
+.hoverme:hover .circolor {
+  animation: color 1s 1;
+}
+@keyframes rotate {
+  0% {
+    transform: rotate(0);
+  }
+  25% {
+    transform: rotate(0deg);
+  }
+  50% {
+    transform: rotate(180deg);
+  }
+  75% {
+    transform: rotate(270deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+@keyframes color {
+  0% {
+    fill: #343930;
+  }
+  50% {
+    fill: #fafafa;
+  }
+  100% {
+    fill: #e8cba6;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */
