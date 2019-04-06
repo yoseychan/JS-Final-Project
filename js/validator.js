@@ -1,147 +1,162 @@
 function validateLog () {
-    let username = document.getElementById("logUser").value;
-    let pass = document.getElementById("logPass").value;
+    var usernameV = document.getElementById("logUser").value;
+    var passwordV = document.getElementById("logPass").value;
+    var username = document.getElementById("logUser");
+    var password = document.getElementById("logPass");
+    var passes = true;
 
-    logError = document.getElementById("logError");
 
 //Username
 
-    if (username === "") {
-        logError.style.border = "1px solid red";
-        logError.innerHTML = "Username is required! ";
-        return false;
+    if (usernameV === "") {
+        document.getElementById('logUserError1').innerHTML = "Username is required! ";
+        username.style.border = "1px solid red";
+        passes = false;
     }
-    if (username.indexOf(" ") !== -1) {
-        logError.style.border = "1px solid red";
-        logError.innerHTML = "Username cannot contain spaces! ";
-        return false;
+    if (usernameV.indexOf(" ") !== -1) {
+        document.getElementById('logUserError2').innerHTML = "Username cannot contain spaces! ";
+        username.style.border = "1px solid red";
+        passes = false;
     }
     
 
 //PASSWORD
 
-    if (pass === "") {
-        logError.style.border = "1px solid red";
-        logError.innerHTML = "Username is required! ";
-        return false;
+    if (passwordV === "") {
+        document.getElementById('logPassError1').innerHTML = "Username is required! ";
+        password.style.border = "1px solid red";
+        passes = false;
 }
-    if (pass.indexOf(" ") !== -1) {
-        logError.style.border = "1px solid red";
-        logError.innerHTML = "Username cannot contain spaces! ";
-        return false;
+    if (passwordV.indexOf(" ") !== -1) {  
+        document.getElementById('logPassError2').innerHTML = "Username cannot contain spaces! ";
+        password.style.border = "1px solid red";
+        passes = false;
 }
-    if (pass.length > 12 || pass.length < 6) {
-        logError.style.border = "1px solid red";
-        logError.innerHTML = "Password must be 6 to 12 characters long! ";
-    return false;
+    if (passwordV.length > 12 || passwordV.length < 6) { 
+        document.getElementById('logPassError3').innerHTML = "Password must be 6 to 12 characters long! ";
+        password.style.border = "1px solid red";
+        passes = false;
 }
 
-return true;
+return passes;
 }
 
 //REGISTER
 function validateReg() {
-    let name = document.getElementById("name").value;
-    let lname = document.getElementById("lname").value;
-    let phone = document.getElementById("phone").value;
-    let username = document.getElementById("regUser").value;
-    let email = document.getElementById("email").value;
-    let pass = document.getElementById("regPass").value;
+    var name = document.getElementById("name");
+    var lname = document.getElementById("lname");
+    var phone = document.getElementById("phone");
+    var username = document.getElementById("regUser");
+    var email = document.getElementById("email");
+    var pass = document.getElementById("regPass");
 
-    let regError = document.getElementById("regError");
+    var nameV = document.getElementById("name").value;
+    var lnameV = document.getElementById("lname").value;
+    var phoneV = document.getElementById("phone").value;
+    var usernameV = document.getElementById("regUser").value;
+    var emailV = document.getElementById("email").value;
+    var passV = document.getElementById("regPass").value;
+
+    var passes = true;
 
     //NAME
     
-    if (name === ""){
-        regError.style.border = "1px solid red";
-        regError.innerHTML = "Name is required! ";
-        console.log('its working partially');
-        return false;
+    if (nameV === ""){
+        document.getElementById('regNameError1').innerHTML = "Name is required! ";
+        name.style.border = "1px solid red";
+        passes = false;
       }
-    if (name.indexOf(" ") !== -1){
-        regError.style.border = "1px solid red";
-        regError.innerHTML = "Name cannot contain spaces! ";
-        return false;
+    if (nameV.indexOf(" ") !== -1){
+        document.getElementById("regNameError2").innerHTML = "Name cannot contain spaces! ";
+        name.style.border = "1px solid red";
+        passes = false;
       }
-    if (name.match(/[a-z]/i)) { 
+    if (nameV.match(/[a-z]/i)) { 
     }else {
-      regError.innerHTML = "Name must be only alphabets";
-      return false;
+        document.getElementById("regNameError3").innerHTML = "Name must be only alphabets";
+        phone.style.border = "1px solid red";
+        passes = false;
     }
       
     //LAST NAME  
       
-    if (lname === "") {
-        regError.style.border = "1px solid red";
-        regError.innerHTML = "Last Name is required! ";
-        return false;
+    if (lnameV === "") {
+        document.getElementById("regLnameError1").innerHTML = "Last Name is required! ";
+        lname.style.border = "1px solid red";
+        passes = false;
     }
-    if (lname.indexOf(" ") !== -1){
-        regError.style.border = "1px solid red";
-        regError.innerHTML = "Last Name cannot contain spaces! ";
-        return false;
+    if (lnameV.indexOf(" ") !== -1){
+        document.getElementById("regLnameError2").innerHTML = "Last Name cannot contain spaces! ";
+        lname.style.border = "1px solid red";
+        passes = false;
     }
-    if (lname.match(/[a-z]/i)) { 
+    if (lnameV.match(/[a-z]/i)) { 
     }else {
-        regError.innerHTML = "Last name must be only alphabets";
-        return false;
+        document.getElementById("regLnameError3").innerHTML = "Last name must be only alphabets! ";
+        lname.style.border = "1px solid red";
+        passes = false;
     }
       
     //PHONE
-      
-    if (isNaN(phone)){
-        regError.style.border = "1px solid red";
-        regError.innerHTML = "Phone number has to be just numbers!";
-        return false;
-    }  
+    if (phoneV === ""){
+        document.getElementById("regPhoneError1").innerHTML = "Phone number has to be just numbers!";
+        phone.style.border = "1px solid red";
+        passes = false;
+    }      
+    if (isNaN(phoneV)){
+        document.getElementById("regPhoneError2").innerHTML = "Phone number has to be just numbers!";
+        phone.style.border = "1px solid red";
+        passes = false;
+    }
+     
     
     //USERNAME 
 
-    if (username === "") {
-        regError.style.border = "1px solid red";
-        regError.innerHTML = "Username is required! ";
-        return false;
+    if (usernameV === "") {
+        document.getElementById("regUserError1").innerHTML = "Username is required! ";
+        username.style.border = "1px solid red";
+        passes = false;
     }
-    if (username.indexOf(" ") !== -1) {
-        regError.style.border = "1px solid red";
-        regError.innerHTML = "Username cannot contain spaces! ";
-        return false;
+    if (usernameV.indexOf(" ") !== -1) {
+        document.getElementById("regUserError2").innerHTML = "Username cannot contain spaces! ";
+        username.style.border = "1px solid red";
+        passes = false;
     }
 
     //EMAIL
       
-    if (email === ""){
-        regError.style.border = "1px solid red";
-        regError.innerHTML = "E-mail is required! ";
-        return false;
+    if (emailV === ""){
+        document.getElementById("regEmailError1").innerHTML = "E-mail is required! ";
+        email.style.border = "1px solid red";
+        passes = false;
       }
-    if (email.indexOf('@') === -1){
-        regError.style.border = "1px solid red";
-        regError.innerHTML = "Not a valid E-mail! ";
-        return false;
+    if (emailV.indexOf('@') === -1){
+        document.getElementById("regEmailError2").innerHTML = "Not a valid E-mail! ";
+        email.style.border = "1px solid red";
+        passes = false;
       }
-    if (email.indexOf(" ") !== -1){
-        regError.style.border = "1px solid red";
-        regError.innerHTML = "E-mail must not contian spaces! ";
-        return false;
+    if (emailV.indexOf(" ") !== -1){
+        document.getElementById("regEmailError3").innerHTML = "E-mail must not contian spaces! ";
+        email.style.border = "1px solid red";
+        passes = false;
       }
     //   PASSWORD
-    if (pass === "") {
-        regError.style.border = "1px solid red";
-        regError.innerHTML = "Username is required! ";
-        return false;
+    if (passV === "") {
+        document.getElementById("regPassError1").innerHTML = "Password is required! ";
+        pass.style.border = "1px solid red";
+        passes = false;
     }
-    if (pass.indexOf(" ") !== -1) {
-        regError.style.border = "1px solid red";
-        regError.innerHTML = "Password cannot contain spaces! ";
-        return false;
+    if (passV.indexOf(" ") !== -1) {
+        document.getElementById("regPassError2").innerHTML = "Password cannot contain spaces! ";
+        pass.style.border = "1px solid red";
+        passes = false;
     }
-    if (pass.length > 12 || pass.length < 6) {
-        regError.style.border = "1px solid red";
-        regError.innerHTML = "Password must be 6 to 12 characters long! ";
-        return false;
+    if (passV.length > 12 || passV.length < 6) {
+        document.getElementById("regPassError3").innerHTML = "Password must be 6 to 12 characters long! ";
+        pass.style.border = "1px solid red";
+        passes = false;
     }
       
-    return true;  
+    return passes;  
 
 }

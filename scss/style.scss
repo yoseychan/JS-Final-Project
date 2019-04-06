@@ -255,7 +255,7 @@ div.logreg {
                         margin-top: 20px;
                         text-decoration: none;
                         input{
-                            height: 40px;
+                            padding: 10px;
                             width: 70%;
                             border: 1px solid $theme-c;
                             font-size: 14px;
@@ -275,6 +275,17 @@ div.logreg {
                             border: 1px solid $theme-g;
                             color: $theme-g; 
                             cursor: pointer;   
+                        }
+                        input::placeholder {
+                            color: $theme-g;
+                            transition: .6s;
+                            position: relative;
+                            left: 0;  
+                        }      
+                        input:focus::placeholder {
+                            opacity: .5;
+                            left: 20px;
+                           
                         } 
                     }
                 }
@@ -283,10 +294,16 @@ div.logreg {
     }
 }
 
+
+
 .redtext {
+    text-align: left;
+    display: block;
+    margin-left: 95px;
+    margin-bottom: 3px;
     color:red;
-    font-size: 16px;
-    margin: 20px;    
+    font-size: 12px;
+    font-family: $font-Robo;
 }
 
 // ABOUT US 
@@ -488,19 +505,103 @@ div.specgal {
                 margin: 20px 0;
             }
             div.col-12 {
-               div {
+               div.ok{
                     img {
                         margin:15px 0;
-                        width:100%;                    
+                        width:100%;
+                        filter: grayscale(100%);
+                        transition: .6s;                   
                     }
                     img:hover {
                         cursor: pointer;
+                        filter: grayscale(0);
                     }
                 }
             }
         }
     }
 }
+
+//Lightbox
+
+.overlay {
+    display:none;
+    position: fixed;
+    top:0;
+    background-color: rgba(0,0,0,.9);
+    width:100%;
+    justify-content: center;
+    align-items: center;
+    z-index: 100;
+}
+
+.slideshow {
+    width: 100%;
+    margin: 50px auto;
+    text-align: center;
+    position: relative;
+}
+
+.specphotos {
+    position: relative;
+    top: 50px;
+    height: 1080px;
+    width: 90%;
+    margin: 0 auto;
+}
+.blocka {
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    left: 0;
+    opacity: 0;
+    transition: opacity 1s;
+}
+.active {
+    opacity: 1;
+}
+.specbuttons {
+    position: absolute;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    top: 60%;
+    font-size: 42px;
+
+    a {
+        text-decoration: none;
+        color: $theme-c;
+        padding: 20px;
+    }
+    a:hover {
+        color: $theme-or;
+    }
+}
+.closeslide {
+    height: 20px;
+    width:20px;
+    margin: 0 auto;
+    a{  
+        color: $theme-c;
+        padding: 10px;
+        font-size: 32px;
+    }
+    a:hover {
+        color: $theme-or;
+        text-decoration: none;
+    }
+}
+.specslide {
+    width: 50%;
+}
+#next {
+    margin-left: 60px;
+}
+#prev {
+    margin-right: 60px;
+}
+
+
 //Reservation details 
 
 .oran {
@@ -604,22 +705,22 @@ div.resdetails {
 
 .hoverme:hover {
     .filler{
-        animation: rotate 1s 1;
+        transition: .1s;
+        transform-origin: 50% 50%;
+        animation: rotate 2s 5;
     }
     .circolor{
         animation: color 1s 1;
     }
-@keyframes rotate {
-    0% {transform: rotate(0)}
-    25% {transform: rotate(0deg)}
-    50% {transform: rotate(180deg)}
-    75% {transform: rotate(270deg)}
-    100% {transform: rotate(360deg)}
-}
-@keyframes color {
-    0% {fill: $theme-g }
-    50% {fill: rgb(250, 250, 250)}
-    100% {fill: $theme-c }
-}
+    @keyframes rotate {
+        0% {transform: rotate(0)}
+        45% {transform: rotate(0)}
+        100% {transform: rotate(360deg)}
+    }
+    @keyframes color {
+        0% {fill: $theme-g }
+        50% {fill: rgb(250, 250, 250)}
+        100% {fill: $theme-c }
+    }
 
 }

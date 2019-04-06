@@ -68,25 +68,61 @@
         <div class="container">
             <div class="row">
                 <div class="col-12 col-md-6">
-                    <h2>Login</h2>
-                    <p class="redtext" id="logError"></p>  
+                    <h2>Login</h2>  
                     <form action="" onsubmit="return validateLog()">
-                        <div><input type="text" id="logUser" placeholder=" Username"></div>
-                        <div><input type="password" id="logPass" placeholder=" Password"></div>
+                        <div>
+                            <p class="redtext" id="logUserError1"></p>
+                            <p class="redtext" id="logUserError2"></p>
+                            <input type="text" id="logUser" placeholder=" Username">
+                        </div>
+                        <div>
+                            <p class="redtext" id="logUserError1"></p>
+                            <p class="redtext" id="logPassError1"></p>
+                            <p class="redtext" id="logPassError2"></p>
+                            <p class="redtext" id="logPassError3"></p>
+                            <input type="password" id="logPass" placeholder=" Password">
+                        </div>
                         <div><input  type="submit" value="Login"></div>
                     </form>
                       
                 </div>
                 <div class="col-12 col-md-6">
                     <h2>Register</h2>
-                    <p class="redtext" id="regError"></p>
                     <form action="" onsubmit="return validateReg()">        
-                        <div><input type="text" id="name" placeholder=" First name"></div>
-                        <div><input type="text" id="lname" placeholder=" Last name"></div>
-                        <div><input type="text" id="phone" placeholder=" Phone number"></div>
-                        <div><input type="text" id="regUser" placeholder=" Username"></div>
-                        <div><input type="text" id="email" placeholder=" Email"></div>
-                        <div><input type="password" id="regPass" placeholder=" Password"></div>
+                        <div>
+                            <p class="redtext" id="regNameError1"></p>
+                            <p class="redtext" id="regNameError2"></p>
+                            <p class="redtext" id="regNameError3"></p>
+                            <input type="text" id="name" placeholder=" First name">
+                        </div>
+                        <div>
+                            <p class="redtext" id="regLnameError1"></p>
+                            <p class="redtext" id="regLnameError2"></p>
+                            <p class="redtext" id="regLnameError3"></p>
+                            <input type="text" id="lname" placeholder=" Last name">
+                        </div>
+                        <div>
+                            <p class="redtext" id="regPhoneError1"></p>
+                            <p class="redtext" id="regPhoneError2"></p>
+                            <input type="text" id="phone" placeholder=" Phone number">
+                        </div>
+                        <div>
+                            <p class="redtext" id="regUserError1"></p>
+                            <p class="redtext" id="regUserError2"></p>
+                            <input type="text" id="regUser" placeholder=" Username">
+                        </div>
+                        <div>
+                            <p class="redtext" id="regEmailError1"></p>
+                            <p class="redtext" id="regEmailError2"></p>
+                            <p class="redtext" id="regEmailError3"></p>
+                            <input type="text" id="email" placeholder=" Email">
+                        </div>
+                        <div>
+                            <p class="redtext" id="regPassError1"></p>
+                            <p class="redtext" id="regPassError2"></p>
+                            <p class="redtext" id="regPassError3"></p>
+                            <input type="password" id="regPass" placeholder=" Password">
+                        </div>
                         <div><input type="submit" value="Register"></div>
                     </form>   
                 </div>

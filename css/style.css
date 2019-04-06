@@ -371,7 +371,7 @@ div.logreg div.container div.row div.col-12 form div {
   text-decoration: none;
 }
 div.logreg div.container div.row div.col-12 form div input {
-  height: 40px;
+  padding: 10px;
   width: 70%;
   border: 1px solid #e8cba6;
   font-size: 14px;
@@ -392,11 +392,25 @@ div.logreg div.container div.row div.col-12 form div input[type=submit]:hover {
   color: #343930;
   cursor: pointer;
 }
+div.logreg div.container div.row div.col-12 form div input::placeholder {
+  color: #343930;
+  transition: 0.6s;
+  position: relative;
+  left: 0;
+}
+div.logreg div.container div.row div.col-12 form div input:focus::placeholder {
+  opacity: 0.5;
+  left: 20px;
+}
 
 .redtext {
+  text-align: left;
+  display: block;
+  margin-left: 95px;
+  margin-bottom: 3px;
   color: red;
-  font-size: 16px;
-  margin: 20px;
+  font-size: 12px;
+  font-family: "Roboto Slab", serif;
 }
 
 .abimg1 {
@@ -584,12 +598,98 @@ div.specgal div.container div.row h1.gtitle {
   text-align: center;
   margin: 20px 0;
 }
-div.specgal div.container div.row div.col-12 div img {
+div.specgal div.container div.row div.col-12 div.ok img {
   margin: 15px 0;
   width: 100%;
+  filter: grayscale(100%);
+  transition: 0.6s;
 }
-div.specgal div.container div.row div.col-12 div img:hover {
+div.specgal div.container div.row div.col-12 div.ok img:hover {
   cursor: pointer;
+  filter: grayscale(0);
+}
+
+.overlay {
+  display: none;
+  position: fixed;
+  top: 0;
+  background-color: rgba(0, 0, 0, 0.9);
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  z-index: 100;
+}
+
+.slideshow {
+  width: 100%;
+  margin: 50px auto;
+  text-align: center;
+  position: relative;
+}
+
+.specphotos {
+  position: relative;
+  top: 50px;
+  height: 1080px;
+  width: 90%;
+  margin: 0 auto;
+}
+
+.blocka {
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  left: 0;
+  opacity: 0;
+  transition: opacity 1s;
+}
+
+.active {
+  opacity: 1;
+}
+
+.specbuttons {
+  position: absolute;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  top: 60%;
+  font-size: 42px;
+}
+.specbuttons a {
+  text-decoration: none;
+  color: #e8cba6;
+  padding: 20px;
+}
+.specbuttons a:hover {
+  color: #e99573;
+}
+
+.closeslide {
+  height: 20px;
+  width: 20px;
+  margin: 0 auto;
+}
+.closeslide a {
+  color: #e8cba6;
+  padding: 10px;
+  font-size: 32px;
+}
+.closeslide a:hover {
+  color: #e99573;
+  text-decoration: none;
+}
+
+.specslide {
+  width: 50%;
+}
+
+#next {
+  margin-left: 60px;
+}
+
+#prev {
+  margin-right: 60px;
 }
 
 .oran {
@@ -687,7 +787,9 @@ div.resdetails div.container div.total a div.topay:hover {
 }
 
 .hoverme:hover .filler {
-  animation: rotate 1s 1;
+  transition: 0.1s;
+  transform-origin: 50% 50%;
+  animation: rotate 2s 5;
 }
 .hoverme:hover .circolor {
   animation: color 1s 1;
@@ -696,14 +798,8 @@ div.resdetails div.container div.total a div.topay:hover {
   0% {
     transform: rotate(0);
   }
-  25% {
-    transform: rotate(0deg);
-  }
-  50% {
-    transform: rotate(180deg);
-  }
-  75% {
-    transform: rotate(270deg);
+  45% {
+    transform: rotate(0);
   }
   100% {
     transform: rotate(360deg);
