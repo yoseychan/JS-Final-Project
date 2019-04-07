@@ -132,14 +132,89 @@ div.ghouse {
     }
 }
 // GUEST HOUSE and Rooms
+.prev {
+    height:500px;
+}
+.block {
+    height: 500px;
+    width: 100%;
+    position: absolute;
+    left: 0;
+    opacity: 0;
+    transition: opacity 1s;
+    background-size: cover;
+    background-position: center;
+    img {
+       text-align: center;
+       height:480px;
+    }
+}
+.gallery {
+    width: 100%;
+    margin: 0 auto;
+    text-align: center;
+    position: relative;
+  } 
+.buttons {
+    position: absolute;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    top: 45%;
+   
+    a {
+        text-decoration: none;
+        color: $theme-g;
+        margin-left: 20px;
+        margin-right: 20px;
+        padding: 0 20px;
+        font-size: 62px;
+    }    
+    a:hover {
+        color: $theme-lightc;;
+    }
+}         
+.photos{
+    position: relative;
+    width: 80%;
+    margin: 0 auto;
+}
+   
+.active{
+    opacity: 1;
+}
+  
+
+.block1 {
+    background-image: url("../img/gallery/ghouse/house1.jpg");
+}
+.block2 {
+    background-image: url("../img/gallery/ghouse/house5.jpg");
+}
+.block3 {
+    background-image: url("../img/gallery/ghouse/room1.jpg");
+}
+.block4 {
+    background-image: url("../img/gallery/ghouse/sauna.jpg");
+}
+.block5 {
+    background-image: url("../img/gallery/accom/bedroom1.jpg");
+}
+.block6 {
+    background-image: url("../img/gallery/accom/kitchen.jpg");
+}
+.block7 {
+    background-image: url("../img/gallery/accom/livingroom1.jpg");
+}
+.block8 {
+    background-image: url("../img/gallery/accom/bathroom.jpg");
+}
+
 
 // PREVIEW AND PRICE
 div.mainline1 {
     width: 100vw;
     color: $theme-g;
-    div.prev {
-        height:400px;   
-    }
     div.text {
         text-align: center;
         div.col {
@@ -188,6 +263,9 @@ div.mainline2 {
             }
         }
     }
+}
+.spacer {
+    height:40px;
 }
 
 //RESERVATION BUTTON

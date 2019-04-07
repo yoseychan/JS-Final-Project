@@ -270,12 +270,96 @@ div.ghouse div.container div.row div.col div.button a {
   transition: 0.6s;
 }
 
+.prev {
+  height: 500px;
+}
+
+.block {
+  height: 500px;
+  width: 100%;
+  position: absolute;
+  left: 0;
+  opacity: 0;
+  transition: opacity 1s;
+  background-size: cover;
+  background-position: center;
+}
+.block img {
+  text-align: center;
+  height: 480px;
+}
+
+.gallery {
+  width: 100%;
+  margin: 0 auto;
+  text-align: center;
+  position: relative;
+}
+
+.buttons {
+  position: absolute;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  top: 45%;
+}
+.buttons a {
+  text-decoration: none;
+  color: #343930;
+  margin-left: 20px;
+  margin-right: 20px;
+  padding: 0 20px;
+  font-size: 62px;
+}
+.buttons a:hover {
+  color: #f7ecdf;
+}
+
+.photos {
+  position: relative;
+  width: 80%;
+  margin: 0 auto;
+}
+
+.active {
+  opacity: 1;
+}
+
+.block1 {
+  background-image: url("../img/gallery/ghouse/house1.jpg");
+}
+
+.block2 {
+  background-image: url("../img/gallery/ghouse/house5.jpg");
+}
+
+.block3 {
+  background-image: url("../img/gallery/ghouse/room1.jpg");
+}
+
+.block4 {
+  background-image: url("../img/gallery/ghouse/sauna.jpg");
+}
+
+.block5 {
+  background-image: url("../img/gallery/accom/bedroom1.jpg");
+}
+
+.block6 {
+  background-image: url("../img/gallery/accom/kitchen.jpg");
+}
+
+.block7 {
+  background-image: url("../img/gallery/accom/livingroom1.jpg");
+}
+
+.block8 {
+  background-image: url("../img/gallery/accom/bathroom.jpg");
+}
+
 div.mainline1 {
   width: 100vw;
   color: #343930;
-}
-div.mainline1 div.prev {
-  height: 400px;
 }
 div.mainline1 div.text {
   text-align: center;
@@ -309,6 +393,10 @@ div.mainline2 div.container div.row div.sq p {
   text-align: center;
   margin: 20px 10px 65px 10px;
   color: #f7ecdf;
+}
+
+.spacer {
+  height: 40px;
 }
 
 div.mainline3 {
