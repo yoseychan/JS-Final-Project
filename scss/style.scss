@@ -686,82 +686,85 @@ div.specgal {
     background-color: $theme-or;
 }
 div.resdetails {
-    max-width: 1920px;
-    background-color: $theme-darkc;
+    width: 100vw;
     div.container {
-        div.hid{
-            overflow: hidden;
-            background-color: $theme-lightc; 
-            div.prog {
-                height: 30px;
-                width: 33%;
-                float: left;
-                h3 {
-                    margin-top: 5px;
-                    text-align: center;
-                    font-size: 18px;   
-                }
-            }
-        }
         div.details {
-            background-color: $theme-c;
             div.calbox{
                 overflow: hidden;
                 div.cal{
                     height:250px;
                     width:50%;
                     float:left;
-                    border: 1px solid $theme-g;
+                    
                 }
             }
-            div.formbox{ 
-                border: 1px solid $theme-g;
-                form{
-                    div.form{
-                        width: 300px;
-                        height:50px;
-                        margin: 0 auto;
-                        input{
-                            margin: 10px 0 20px 0;
-                            border: 1px solid $theme-c;
-                        }
-                        input[type="text"] {
-                            width: 40px;
-                            height:30px;
-                            text-align: center;
-                        }
-                        input[type="checkbox"] {
-                            font-size: 24px;     
-                        }
-                    }  
-                }
-            }
-        } 
-        div.weather{
-            height:100px;
-            background-color: $theme-lightc;
-            font-size: 24px;
-            div.middle{
-                text-align: center;   
+        }
+        div.formbox{
+ 
+            form{
+                div.form{
+                    margin-top: 20px;
+                    margin-left: 45%;
+                    color: $theme-c;
+                    input{
+                        margin: 10px 0 20px 0;
+                        border: 1px solid $theme-c;
+                        color: $theme-c;
+                    }
+                    input::placeholder {
+                        color: $theme-g;
+                        transition: .6s;
+                        position: relative;
+                        left: 0;  
+                    }      
+                    input:focus::placeholder {
+                        opacity: .5;
+                        left: 20px;   
+                    } 
+                    input[type="text"] {
+                        width: 40px;
+                        height:30px;
+                        color: $theme-g;    
+                    }
+                    input[type="checkbox"]{
+                        font-size: 24px;     
+                    }
+                }  
             }
         }
         div.total {
-            a{
-                text-decoration: none;
-                div.topay {
-                    height:38px;
-                    background-color: $theme-g;
-                    color: $theme-c;
-                    text-align: center;
-                    font-size: 32px;
-                    transition: .6s; 
-                }
-                div.topay:hover {
-                    text-decoration: none;
-                    background-color: $theme-c;
+            div.list {
+                h3{
                     color: $theme-g;
-                    border: 1px solid $theme-g;
+                    font-size: 32px;
+                    margin-top: 20px;
                 }
+            }
+            div.pay {
+                margin: 20px 0;
+                a{
+                text-decoration: none;
+                    div.topay {
+                        height:38px;
+                        background-color: $theme-g;
+                        color: $theme-c;
+                        text-align: center;
+                        font-size: 32px;
+                        transition: .6s; 
+                    }
+                    div.topay:hover {
+                        text-decoration: none;
+                        background-color: $theme-c;
+                        color: $theme-g;
+                        border: 1px solid $theme-g;
+                    }
+                }
+            }
+        }
+        div.weather{
+            p{
+                font-size: 24px;
+                margin: 40px;
             }
         }
     }
@@ -775,7 +778,8 @@ div.resdetails {
 }
 .topay {
     height: 10%;
-    width: 100%;
+    width: 50%;
+    margin: 0 auto;
     background-color: $theme-g;
 }
 

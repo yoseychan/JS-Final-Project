@@ -62,46 +62,52 @@
         </div>
     </div> 
     <!-- MAIN -->
-    <div class="resdetails">
+    <div class="resdetails lighter">
         <div class="container">
-            <div class="row hid">
-                <div class="col-12 hid lighter">
-                    <div class="prog lighter">
-                        <h3>Details</h3>
-                    </div>
-                    <div class="prog oran">
-                        <h3>Payment method</h3>
-                    </div>
-                    <div class="prog oran">
-                        <h3>Invoice</h3>
-                    </div>
-                </div>
-            </div>
             <div class="row details">
-                <div class="col-md-8 col-12 det">
+                <div class="col-12 cal">
                     <div class="calbox">
                         <div class="cal">from</div>
                         <div class="cal">to</div>
                     </div>
-                    <div class="formbox">
-                        <form action="">
-                            <div class="form"><input type="text" name="persons" id="persons"><label for="persons">person count (max. 7)</label></div>
-                            <div class="form"><input type="checkbox" name="Breakfast" id="breakfast" value="5"><label for="breakfast">Breakfast (3&euro; per person/day)</label></div>
-                            <div class="form"><input type="checkbox" name="Dinner" id="dinner" value="5"><label for="dinner">Dinner (3&euro; per person/day)</label></div>
-                            <div class="form"><input type="checkbox" name="Transfer" id="transfer" value="10"><label for="Transfer">Transfer from RIX airport (10&euro;)</label></div>
-                            <div class="form"><input type="checkbox" name="Rental" id="car" ><label for="Rental">Rental car (Payment at check in)</label></div>                    
-                        </form>
-                    </div>
-                </div>
-                <div class="col-md-4 col-12 total">
-                    <div class="list">list</div>
-                    <a href="#"><div class="topay "><h2>Next</h2></div></a> 
                 </div>
             </div>
+        </div>
+    </div>
+    <div class="resdetails darker">
+        <div class="container">      
+            <div class="row formbox">
+                <div class="col-12 formbox">  
+                    <form action="">
+                        <div class="form"><input type="text" name="persons" id="persons"><label for="persons">person count (max. 7)</label></div>
+                        <div class="form"><input type="checkbox" name="Breakfast" id="breakfast" value="5"><label for="breakfast">Breakfast (3&euro; per person/day)</label></div>
+                        <div class="form"><input type="checkbox" name="Dinner" id="dinner" value="5"><label for="dinner">Dinner (3&euro; per person/day)</label></div>
+                        <div class="form"><input type="checkbox" name="Transfer" id="transfer" value="10"><label for="Transfer">Transfer from RIX airport (10&euro;)</label></div>
+                        <div class="form"><input type="checkbox" name="Rental" id="car" ><label for="Rental">Rental car (Payment at check in)</label></div>                    
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="resdetails lighter">
+        <div class="container">
+            <div class="row total">
+                <div class="col-6 list">
+                    <h3>Total: 0.00  </h3>
+                </div>
+                <div class="col-6 pay">
+                    <a href="#"><div class="topay"><h2>Next</h2></div></a>
+                </div>
+            </div>        
             <div class="row weather">
-                <div class="col-4 current marweather">Current:</div>
-                <div class="col-4 middle marweather"> Weather</div>
-                <div class="col-4 future marweather">In 7 days:</div>
+                <div class="col-6 current marweather">
+                    <p id="temp"></p>
+                    <div class="w1"></div>
+                </div>
+                <div class="col-6 future marweather">
+                    <p>In 5 days: </p>
+                    <div class="w1"></div>
+                </div>
             </div>
         </div>
     </div>
@@ -143,5 +149,6 @@
     </div>
 
     <script src="js/main.js"></script>
+    <script src="js/apicall.js"></script>
 </body>
 </html>

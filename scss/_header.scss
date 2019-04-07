@@ -1,11 +1,11 @@
 
 
 div.header {
-    height: 80px;
+    min-height: 80px;
     width: 100vw;
     background-color: $theme-g;
     div.container{
-        height:100px;
+        height:80px;
         div.row{
             height: 100%;
             div.hnav {
@@ -48,3 +48,4 @@ div.header {
         }    
     }
 }
+

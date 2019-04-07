@@ -44,12 +44,12 @@ table {
 }
 
 div.header {
-  height: 80px;
+  min-height: 80px;
   width: 100vw;
   background-color: #343930;
 }
 div.header div.container {
-  height: 100px;
+  height: 80px;
 }
 div.header div.container div.row {
   height: 100%;
@@ -785,25 +785,7 @@ div.specgal div.container div.row div.col-12 div.ok img:hover {
 }
 
 div.resdetails {
-  max-width: 1920px;
-  background-color: #bea37e;
-}
-div.resdetails div.container div.hid {
-  overflow: hidden;
-  background-color: #f7ecdf;
-}
-div.resdetails div.container div.hid div.prog {
-  height: 30px;
-  width: 33%;
-  float: left;
-}
-div.resdetails div.container div.hid div.prog h3 {
-  margin-top: 5px;
-  text-align: center;
-  font-size: 18px;
-}
-div.resdetails div.container div.details {
-  background-color: #e8cba6;
+  width: 100vw;
 }
 div.resdetails div.container div.details div.calbox {
   overflow: hidden;
@@ -812,40 +794,47 @@ div.resdetails div.container div.details div.calbox div.cal {
   height: 250px;
   width: 50%;
   float: left;
-  border: 1px solid #343930;
 }
-div.resdetails div.container div.details div.formbox {
-  border: 1px solid #343930;
+div.resdetails div.container div.formbox form div.form {
+  margin-top: 20px;
+  margin-left: 45%;
+  color: #e8cba6;
 }
-div.resdetails div.container div.details div.formbox form div.form {
-  width: 300px;
-  height: 50px;
-  margin: 0 auto;
-}
-div.resdetails div.container div.details div.formbox form div.form input {
+div.resdetails div.container div.formbox form div.form input {
   margin: 10px 0 20px 0;
   border: 1px solid #e8cba6;
+  color: #e8cba6;
 }
-div.resdetails div.container div.details div.formbox form div.form input[type=text] {
+div.resdetails div.container div.formbox form div.form input::placeholder {
+  color: #343930;
+  transition: 0.6s;
+  position: relative;
+  left: 0;
+}
+div.resdetails div.container div.formbox form div.form input:focus::placeholder {
+  opacity: 0.5;
+  left: 20px;
+}
+div.resdetails div.container div.formbox form div.form input[type=text] {
   width: 40px;
   height: 30px;
-  text-align: center;
+  color: #343930;
 }
-div.resdetails div.container div.details div.formbox form div.form input[type=checkbox] {
+div.resdetails div.container div.formbox form div.form input[type=checkbox] {
   font-size: 24px;
 }
-div.resdetails div.container div.weather {
-  height: 100px;
-  background-color: #f7ecdf;
-  font-size: 24px;
+div.resdetails div.container div.total div.list h3 {
+  color: #343930;
+  font-size: 32px;
+  margin-top: 20px;
 }
-div.resdetails div.container div.weather div.middle {
-  text-align: center;
+div.resdetails div.container div.total div.pay {
+  margin: 20px 0;
 }
-div.resdetails div.container div.total a {
+div.resdetails div.container div.total div.pay a {
   text-decoration: none;
 }
-div.resdetails div.container div.total a div.topay {
+div.resdetails div.container div.total div.pay a div.topay {
   height: 38px;
   background-color: #343930;
   color: #e8cba6;
@@ -853,11 +842,15 @@ div.resdetails div.container div.total a div.topay {
   font-size: 32px;
   transition: 0.6s;
 }
-div.resdetails div.container div.total a div.topay:hover {
+div.resdetails div.container div.total div.pay a div.topay:hover {
   text-decoration: none;
   background-color: #e8cba6;
   color: #343930;
   border: 1px solid #343930;
+}
+div.resdetails div.container div.weather p {
+  font-size: 24px;
+  margin: 40px;
 }
 
 .marweather {
@@ -870,7 +863,8 @@ div.resdetails div.container div.total a div.topay:hover {
 
 .topay {
   height: 10%;
-  width: 100%;
+  width: 50%;
+  margin: 0 auto;
   background-color: #343930;
 }
 
