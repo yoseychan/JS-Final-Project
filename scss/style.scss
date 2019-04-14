@@ -160,18 +160,19 @@ div.ghouse {
     width: 100%;
     display: flex;
     justify-content: space-between;
-    top: 45%;
-   
+    top: 43%;
     a {
         text-decoration: none;
-        color: $theme-g;
-        margin-left: 20px;
-        margin-right: 20px;
-        padding: 0 20px;
+        color: $theme-c-trans;
+        margin-left: 150px;
+        margin-right: 150px;
+        padding: 0 5px;
+        background-color: $theme-g-trans;
         font-size: 62px;
+        
     }    
     a:hover {
-        color: $theme-lightc;;
+        color: $theme-lightc;
     }
 }         
 .photos{
@@ -186,7 +187,7 @@ div.ghouse {
   
 
 .block1 {
-    background-image: url("../img/gallery/ghouse/house1.jpg");
+    background-image: url("../img/gallery/ghouse/house1re.jpg");
 }
 .block2 {
     background-image: url("../img/gallery/ghouse/house5.jpg");
@@ -371,7 +372,6 @@ div.logreg {
         }
     }
 }
-
 
 
 .redtext {
@@ -727,7 +727,8 @@ div.resdetails {
                         color: $theme-g;    
                     }
                     input[type="checkbox"]{
-                        font-size: 24px;     
+                        font-size: 24px;
+                        padding: 0 20px;     
                     }
                 }  
             }
@@ -763,8 +764,10 @@ div.resdetails {
         }
         div.weather{
             p{
-                font-size: 24px;
-                margin: 40px;
+                font-size: 20px;
+                margin: 40px 0 10px 0;
+                text-align: right;
+                color: $theme-g;
             }
         }
     }
@@ -779,30 +782,58 @@ div.resdetails {
 .topay {
     height: 10%;
     width: 50%;
-    margin: 0 auto;
+    margin: 0 0 0 50%;
     background-color: $theme-g;
+}
+#w1 {
+    background-position: center;
+    background-size: cover;
+    width: 64px;
+    height: 64px;
+
+    margin: 20px 0 10px 0;
+}
+.redpersons {
+    color: red;
+    font-size: 13px;
 }
 
 //SVG ANIMATION
 
-.hoverme:hover {
-    .filler{
-        transition: .1s;
+.hoverme {
+    .filler {
         transform-origin: 50% 50%;
-        animation: rotate 2s 5;
+        animation: spinAround 2s infinite;
+        animation-delay: 5s;
     }
-    .circolor{
-        animation: color 1s 1;
-    }
-    @keyframes rotate {
+    @keyframes spinAround {
         0% {transform: rotate(0)}
         45% {transform: rotate(0)}
         100% {transform: rotate(360deg)}
     }
-    @keyframes color {
+}
+
+.hoverme:hover {
+    .filler{
+        transition: 1s;
+        
+    }
+    .circolor{
+        animation: flashColor .3s 1;
+    }
+    @keyframes flashColor {
         0% {fill: $theme-g }
         50% {fill: rgb(250, 250, 250)}
         100% {fill: $theme-c }
     }
+}
 
+@media (max-width: 750px) {
+    .buttons {
+        a{
+            margin: 0;
+            margin-left: 50px;
+            margin-right: 50px;
+        }
+    }
 }

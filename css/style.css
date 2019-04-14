@@ -44,7 +44,7 @@ table {
 }
 
 div.header {
-  min-height: 80px;
+  height: 80px;
   width: 100vw;
   background-color: #343930;
 }
@@ -54,19 +54,19 @@ div.header div.container {
 div.header div.container div.row {
   height: 100%;
 }
-div.header div.container div.row div.hnav nav {
+div.header div.container div.row div.hnav nav.normal {
   text-align: center;
 }
-div.header div.container div.row div.hnav nav ul {
+div.header div.container div.row div.hnav nav.normal ul {
   list-style-type: none;
   display: inline-block;
   margin: 0;
   font-size: 0;
 }
-div.header div.container div.row div.hnav nav ul li {
+div.header div.container div.row div.hnav nav.normal ul li {
   display: inline-block;
 }
-div.header div.container div.row div.hnav nav ul li a {
+div.header div.container div.row div.hnav nav.normal ul li a {
   text-decoration: none;
   display: inline-block;
   color: #e8cba6;
@@ -75,20 +75,66 @@ div.header div.container div.row div.hnav nav ul li a {
   padding-top: 37px;
   transition: 0.6s;
 }
-div.header div.container div.row div.hnav nav ul li a.micasa {
+div.header div.container div.row div.hnav nav.normal ul li a.micasa {
   font-size: 46px;
   font-family: "Leckerli One", cursive;
   padding: 17px;
 }
-div.header div.container div.row div.hnav nav ul li a.micasa:hover {
+div.header div.container div.row div.hnav nav.normal ul li a.micasa:hover {
   background-color: #343930;
   color: #e8cba6;
 }
-div.header div.container div.row div.hnav nav ul li a:hover {
+div.header div.container div.row div.hnav nav.normal ul li a:hover {
   color: #343930;
   background-color: #e8cba6;
 }
 
+.micasa {
+  font-size: 46px;
+  font-family: "Leckerli One", cursive;
+  color: #e8cba6;
+}
+
+.micasa:hover {
+  color: #e8cba6;
+}
+
+.burgerino {
+  color: #e8cba6;
+  font-size: 30px;
+}
+
+.abur {
+  background-color: #343930;
+  color: #e8cba6;
+  font-size: 22px;
+  transition: 0.6s;
+}
+
+.abur:hover {
+  background-color: #f7ecdf;
+  color: #343930;
+}
+
+.nav-item {
+  background-color: #343930;
+}
+
+@media (max-width: 990px) {
+  div.header {
+    height: 64px;
+  }
+
+  .abur {
+    padding: 15px;
+  }
+}
+@media (max-width: 762px) {
+  .abur {
+    background-color: #e8cba6;
+    color: #343930;
+  }
+}
 div.footer {
   width: 100vw;
   background-color: #343930;
@@ -301,14 +347,15 @@ div.ghouse div.container div.row div.col div.button a {
   width: 100%;
   display: flex;
   justify-content: space-between;
-  top: 45%;
+  top: 43%;
 }
 .buttons a {
   text-decoration: none;
-  color: #343930;
-  margin-left: 20px;
-  margin-right: 20px;
-  padding: 0 20px;
+  color: rgba(232, 203, 166, 0.8);
+  margin-left: 150px;
+  margin-right: 150px;
+  padding: 0 5px;
+  background-color: rgba(52, 57, 48, 0.8);
   font-size: 62px;
 }
 .buttons a:hover {
@@ -326,7 +373,7 @@ div.ghouse div.container div.row div.col div.button a {
 }
 
 .block1 {
-  background-image: url("../img/gallery/ghouse/house1.jpg");
+  background-image: url("../img/gallery/ghouse/house1re.jpg");
 }
 
 .block2 {
@@ -822,6 +869,7 @@ div.resdetails div.container div.formbox form div.form input[type=text] {
 }
 div.resdetails div.container div.formbox form div.form input[type=checkbox] {
   font-size: 24px;
+  padding: 0 20px;
 }
 div.resdetails div.container div.total div.list h3 {
   color: #343930;
@@ -849,8 +897,10 @@ div.resdetails div.container div.total div.pay a div.topay:hover {
   border: 1px solid #343930;
 }
 div.resdetails div.container div.weather p {
-  font-size: 24px;
-  margin: 40px;
+  font-size: 20px;
+  margin: 40px 0 10px 0;
+  text-align: right;
+  color: #343930;
 }
 
 .marweather {
@@ -864,19 +914,29 @@ div.resdetails div.container div.weather p {
 .topay {
   height: 10%;
   width: 50%;
-  margin: 0 auto;
+  margin: 0 0 0 50%;
   background-color: #343930;
 }
 
-.hoverme:hover .filler {
-  transition: 0.1s;
+#w1 {
+  background-position: center;
+  background-size: cover;
+  width: 64px;
+  height: 64px;
+  margin: 20px 0 10px 0;
+}
+
+.redpersons {
+  color: red;
+  font-size: 13px;
+}
+
+.hoverme .filler {
   transform-origin: 50% 50%;
-  animation: rotate 2s 5;
+  animation: spinAround 2s infinite;
+  animation-delay: 5s;
 }
-.hoverme:hover .circolor {
-  animation: color 1s 1;
-}
-@keyframes rotate {
+@keyframes spinAround {
   0% {
     transform: rotate(0);
   }
@@ -887,7 +947,14 @@ div.resdetails div.container div.weather p {
     transform: rotate(360deg);
   }
 }
-@keyframes color {
+
+.hoverme:hover .filler {
+  transition: 1s;
+}
+.hoverme:hover .circolor {
+  animation: flashColor 0.3s 1;
+}
+@keyframes flashColor {
   0% {
     fill: #343930;
   }
@@ -896,6 +963,14 @@ div.resdetails div.container div.weather p {
   }
   100% {
     fill: #e8cba6;
+  }
+}
+
+@media (max-width: 750px) {
+  .buttons a {
+    margin: 0;
+    margin-left: 50px;
+    margin-right: 50px;
   }
 }
 
